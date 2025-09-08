@@ -1,0 +1,26 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Render\Element\RenderElement;
+use Drupal\Core\Render\Element\RenderableInterface;
+use Drupal\Core\Render\Element\FormElement;
+
+/**
+ * Implements hook_theme().
+ */
+function devspring_theme($existing, $type, $theme, $path)
+{
+  return [
+    'gen_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    'about_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    ];
+}

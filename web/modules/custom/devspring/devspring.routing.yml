@@ -1,0 +1,7 @@
+devspring.front:
+  path: '/front'
+  defaults:
+    _title: 'Devspring'
+    _controller: '\Drupal\devspring\Controller\FrontController::content'
+  requirements:
+    _permission: 'access content'

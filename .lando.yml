@@ -1,0 +1,104 @@
+name: devspring
+recipe: drupal10
+config:
+  webroot: web
+  php: 8.2
+  database: mysql:5.7.27
+  framework: drupal
+  env: dev
+proxy:
+  appserver:
+    - local.devspring.dev
+tooling:
+  install-devspring:
+    service: appserver
+    description: Install as per requirements.
+    cmd:
+      - mkdir -p web/sites/default/files/private
+      - mkdir -p web/sites/default/files/temp
+      - echo '' > web/sites/default/settings.local.php
+      - echo "██████ Salam! Please take a rest this process will take around 5-7 minutes ██████"
+      - composer install --ignore-platform-reqs
+      - drush si --db-url=mysql://drupal10:drupal10@database:3306/drupal10 --site-name="DevSpring" -y --account-pass=admin -y
+      - drush cset system.site uuid c5d349ed-98ab-4b9f-b91f-050cca5cab52 -y
+      - drush entity:delete shortcut_set
+      - drush config-import -y
+      - drush config-import -y
+      - chmod 0777 web/sites/default
+      - echo '<?php\n\n$settings['\''hash_salt'\''] = '\''TwtlyaiVTlqzcUZbqk1cyLCOoe30cMmdj3-2ZMbKOiJJ3XEhMcSpRB3g11uGfCQcj_pgyBq5PQ'\'';\n\n$databases['\''default'\'']['\''default'\''] = array (\n  '\''database'\'' => '\''drupal10'\'',\n  '\''username'\'' => '\''drupal10'\'',\n  '\''password'\'' => '\''drupal10'\'',\n  '\''prefix'\'' => '\'''\'',\n  '\''host'\'' => '\''database'\'',\n  '\''port'\'' => '\''3306'\'',\n  '\''namespace'\'' => '\''Drupal\\Core\\Database\\Driver\\mysql'\'',\n  '\''driver'\'' => '\''mysql'\'',\n);' > web/sites/default/settings.local.php
+      - sh -c "echo '\n// Development only configuration' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''system.logging'\'']['\''error_level'\''] = '\''verbose'\'';' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''system.performance'\'']['\''css'\'']['\''preprocess'\''] = FALSE;' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''system.performance'\'']['\''js'\'']['\''preprocess'\''] = FALSE;' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$settings['\''config_exclude_modules'\''] = [\n  '\''devel'\'',\n  '\''dblog'\'',\n '\''devel_php'\'',\n '\''default_content'\''\n];' >> web/sites/default/settings.local.php"
+      - sh -c "echo '\$config['\''captcha.settings'\'']['\''default_challenge'\''] = '\''captcha/Math'\'';' >> web/sites/default/settings.local.php"
+      - git config --global --add safe.directory /app
+      - git checkout config/sync
+      - git checkout web/sites/default/settings.php
+      - drush config-import -y
+      - drush cset locale.settings translation.use_source 'remote_and_local' -y
+      - drush locale-check
+      - drush locale-update
+      - drush cr
+      - echo "██████ Installation process has been finished successfully ██████"
+      - echo "██████ Use these credentials admin/admin or the following URL ██████"
+      - drush uli
+  dejavu:
+    service: appserver
+    description: Import and apply new config changes (the same automated action that happened before).
+    cmd:
+      - composer install --no-interaction --ignore-platform-reqs
+      - drush cr
+      - drush config-import -y
+      - drush config-import -y
+      - drush locale:import ar modules/custom/devspring/translations/ar.po
+      - drush locale:import ar modules/custom/devspring/translations/core_ar.po
+      - drush updb -y
+      - drush cr
+  dejavu-hard:
+    service: appserver
+    description: Revert composer JSON changes.
+    cmd:
+      - git checkout composer.json composer.lock
+      - rm -rf ./vendor
+      - composer install
+      - git status
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for Apache.
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && /etc/init.d/apache2 reload && echo "Xdebug enabled"
+    user: root
+  phpcs:
+    service: appserver
+    description: phpcs
+    cmd:
+      - '/app/vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,js,css,info,txt,md --runtime-set installed_paths /app/vendor/drupal/coder/coder_sniffer,/app/vendor/slevomat/coding-standard'
+  phpcbf:
+    service: appserver
+    description: phpcbf
+    cmd:
+      - '/app/vendor/bin/phpcbf --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme,js,css,info,txt,md --runtime-set installed_paths /app/vendor/drupal/coder/coder_sniffer,/app/vendor/slevomat/coding-standard'
+services:
+  appserver:
+    scanner: false
+    run_as_root:
+      - chmod -R 0777 web/sites/default
+    overrides:
+      environment:
+        # Support debugging CLI with XDEBUG.
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION_START: lando
+    xdebug: true
+    #    config:
+    #      php: config/php.ini
+    build_as_root:
+      - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload
+  pma:
+    type: phpmyadmin
+    hosts:
+    - database
+  mymailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver

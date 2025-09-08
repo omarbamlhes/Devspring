@@ -1,0 +1,40 @@
+<?php
+declare(strict_types=1);
+
+use Drupal\config_pages\Entity\ConfigPages;
+
+/**
+ * @file
+ * Functions to support theming in the Dev theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function dev_preprocess_html(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function dev_preprocess_page(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function dev_preprocess_node(array &$variables): void {
+
+}
+
+
+// i need the function preprocess_views_view 
+function dev_preprocess_views_view(array &$variables): void {
+    $config_page = ConfigPages::config('general_settings');
+    if ($config_page) {
+        $title = $config_page->get('field_title_service')->value;
+    }
+    $variables['title'] = $title;
+}

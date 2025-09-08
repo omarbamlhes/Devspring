@@ -1,0 +1,5 @@
+name: 'devspring'
+type: module
+description: 'The module specific for the site.'
+package: Custom
+core_version_requirement: ^10 || ^11
