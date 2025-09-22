@@ -1,0 +1,228 @@
+{#
+/**
+ * @file
+ * Dev theme's implementation to display a full statistic node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}.
+ * - url: Direct URL of the current node.
+ * - attributes: HTML attributes for the containing element.
+ * - title_attributes: Same as attributes, except applied to the main title tag.
+ * - content_attributes: Same as attributes, except applied to the main content tag.
+ *
+ * @see template_preprocess_node()
+ */
+#}
+
+{{ drupal_block('devspring_subheader_block') }}
+
+<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle|clean_class, 'node--view-mode-' ~ view_mode|clean_class) }}>
+
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5 justify-content-center">
+        
+        {# Main content area #}
+        <div class="col-lg-8">
+          
+          {# Statistic header with icon and number #}
+          <div class="text-center mb-5">
+            {% if content.field_icon %}
+              <div class="statistic-icon mb-4">
+                <div class="service-icon flex-shrink-0 mx-auto" style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center;">
+                  {{ content.field_icon }}
+                </div>
+              </div>
+            {% endif %}
+            
+            {{ title_prefix }}
+            <h1{{ title_attributes.addClass('mb-3') }}>{{ label }}</h1>
+            {{ title_suffix }}
+            
+            {% if content.field_number %}
+              <div class="statistic-number mb-4">
+                <h2 class="display-1 text-primary fw-bold">{{ content.field_number }}</h2>
+              </div>
+            {% endif %}
+          </div>
+
+          {# Statistic content #}
+          <div{{ content_attributes.addClass('statistic-content') }}>
+            
+            {# Statistic description/body #}
+            {% if content.body %}
+              <div class="statistic-description mb-5">
+                <div class="section-title position-relative pb-3 mb-4 text-center">
+                  <h3 class="mb-0">{{ "About This Statistic"|t }}</h3>
+                </div>
+                {{ content.body }}
+              </div>
+            {% endif %}
+
+            {# Additional statistic fields #}
+            {% if content.field_source %}
+              <div class="statistic-source mb-4">
+                <div class="bg-light p-4 rounded">
+                  <h4 class="h5 mb-3">
+                    <i class="fa fa-database text-primary me-2"></i>{{ "Data Source"|t }}
+                  </h4>
+                  {{ content.field_source }}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if content.field_methodology %}
+              <div class="statistic-methodology mb-4">
+                <div class="bg-light p-4 rounded">
+                  <h4 class="h5 mb-3">
+                    <i class="fa fa-chart-line text-primary me-2"></i>{{ "Methodology"|t }}
+                  </h4>
+                  {{ content.field_methodology }}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if content.field_time_period %}
+              <div class="statistic-period mb-4">
+                <div class="bg-light p-4 rounded">
+                  <h4 class="h5 mb-3">
+                    <i class="fa fa-calendar text-primary me-2"></i>{{ "Time Period"|t }}
+                  </h4>
+                  {{ content.field_time_period }}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if content.field_context %}
+              <div class="statistic-context mb-4">
+                <div class="section-title position-relative pb-3 mb-4">
+                  <h3 class="mb-0">{{ "Context & Analysis"|t }}</h3>
+                </div>
+                {{ content.field_context }}
+              </div>
+            {% endif %}
+
+            {# Related statistics or insights #}
+            {% if content.field_related_stats %}
+              <div class="related-statistics mb-4">
+                <div class="section-title position-relative pb-3 mb-4">
+                  <h3 class="mb-0">{{ "Related Statistics"|t }}</h3>
+                </div>
+                {{ content.field_related_stats }}
+              </div>
+            {% endif %}
+
+            {# Key insights or takeaways #}
+            {% if content.field_insights %}
+              <div class="statistic-insights mb-5">
+                <div class="section-title position-relative pb-3 mb-4">
+                  <h3 class="mb-0">{{ "Key Insights"|t }}</h3>
+                </div>
+                <div class="insights-content bg-primary text-white p-4 rounded">
+                  {{ content.field_insights }}
+                </div>
+              </div>
+            {% endif %}
+
+            {# Call to action #}
+            <div class="statistic-cta mt-5 p-4 bg-light rounded text-center">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                  <h4 class="mb-2">{{ "Want to Learn More?"|t }}</h4>
+                  <p class="mb-3">{{ "Discover how these statistics can impact your business decisions."|t }}</p>
+                  <a class="btn btn-primary py-2 px-4 me-2" href="/services">
+                    <i class="fa fa-cogs me-2"></i>{{ "Our Services"|t }}
+                  </a>
+                  <a class="btn btn-outline-primary py-2 px-4" href="/form/contact">
+                    <i class="fa fa-envelope me-2"></i>{{ "Contact Us"|t }}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        {# Sidebar #}
+        <div class="col-lg-4">
+          
+          {# Statistic details sidebar #}
+          <div class="statistic-sidebar bg-light p-4 rounded mb-4">
+            <h4 class="mb-4">{{ "Quick Facts"|t }}</h4>
+            
+            {# Statistic number highlight #}
+            {% if content.field_number %}
+              <div class="stat-highlight mb-3 text-center">
+                <div class="display-4 text-primary fw-bold">{{ content.field_number.0['#markup']|striptags }}</div>
+                <div class="text-muted">{{ label }}</div>
+              </div>
+            {% endif %}
+
+            {# Data collection date #}
+            {% if content.field_collection_date %}
+              <div class="stat-detail mb-3">
+                <i class="fa fa-calendar-check text-primary me-2"></i>
+                <strong>{{ "Data Collected"|t }}: </strong>{{ content.field_collection_date }}
+              </div>
+            {% endif %}
+
+            {# Accuracy or confidence level #}
+            {% if content.field_accuracy %}
+              <div class="stat-detail mb-3">
+                <i class="fa fa-check-circle text-primary me-2"></i>
+                <strong>{{ "Accuracy Level"|t }}: </strong>{{ content.field_accuracy }}
+              </div>
+            {% endif %}
+
+            {# Sample size #}
+            {% if content.field_sample_size %}
+              <div class="stat-detail mb-3">
+                <i class="fa fa-users text-primary me-2"></i>
+                <strong>{{ "Sample Size"|t }}: </strong>{{ content.field_sample_size }}
+              </div>
+            {% endif %}
+
+            {# Geographic scope #}
+            {% if content.field_geographic_scope %}
+              <div class="stat-detail mb-3">
+                <i class="fa fa-globe text-primary me-2"></i>
+                <strong>{{ "Geographic Scope"|t }}: </strong>{{ content.field_geographic_scope }}
+              </div>
+            {% endif %}
+          </div>
+
+          {# Additional statistics or trends #}
+          <div class="trending-stats bg-light p-4 rounded mb-4">
+            <h4 class="mb-4">{{ "Trending Statistics"|t }}</h4>
+            {# This would typically be populated by a view or custom code #}
+            {{ drupal_block('devspring_related_block') }}
+          </div>
+
+          {# Share this statistic #}
+          <div class="share-statistic bg-primary text-white p-4 rounded">
+            <h4 class="mb-3 text-white">{{ "Share This Statistic"|t }}</h4>
+            <p class="mb-3">{{ "Help others discover this valuable information."|t }}</p>
+            <div class="social-share">
+              {# <a href="#" class="btn btn-light btn-sm me-2" onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('{{ label|e('js') }}'), 'twitter', 'width=600,height=400'); return false;">
+                <i class="fab fa-twitter"></i>
+              </a> #}
+              <a href="#" class="btn btn-light btn-sm me-2" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), 'linkedin', 'width=600,height=400'); return false;">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="btn btn-light btn-sm" onclick="navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!')); return false;">
+                <i class="fa fa-copy"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</article>

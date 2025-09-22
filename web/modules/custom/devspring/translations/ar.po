@@ -1,0 +1,80 @@
+# Arabic translation of devspring.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2025-04-22 17:47+0300\n"
+"PO-Revision-Date: 2023-04-22 17:47+0300\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=((n==1)?(0):((n==0)?(1):((n==2)?(2):((((n%100)>=3)&&((n%100)<=10))?(3):((((n%100)>=11)&&((n%100)<=99))?(4):5)))));\n"
+
+msgid "Front Page"
+msgstr "الصفحة الرئيسية"
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Webform"
+msgstr "النماذج"
+
+msgid "View All Solutions"
+msgstr "عرض جميع الحلول"
+
+msgid "Devspring"
+msgstr "نبع التطور"
+
+msgid "Free Quote"
+msgstr "عرض أسعار مجاني"
+
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+msgid "Innovative solutions"
+msgstr "حلول مبتكرة"
+
+msgid "High quality and performance"
+msgstr "جودة وأداء عالي"
+
+msgid "Specialized technical expertise"
+msgstr "خبرة تقنية متخصصة"
+
+msgid "Continuous support and effective cooperation"
+msgstr "دعم مستمر وتعاون فعال"
+
+msgid "Read More"
+msgstr "قراءة المزيد"
+
+msgid "About Us"
+msgstr "معلومات عنا"
+
+msgid "Our Services"
+msgstr "خدماتنا"
+
+
+msgid "Our Projects"
+msgstr "مشاريعنا"
+
+msgid "Ready to get started"
+msgstr "جاهز للبدء"
+
+msgid "Subscribe now and get the most important news as soon as it is published"
+msgstr "اشترك الان واحصل على أهم الأخبار فور نشرها"
+
+msgid "Enter Your Email"
+msgstr "ادخل البريد الالكتروني هنا"
+
+msgid "Get a free consultation"
+msgstr "احصل على استشارة مجانية"
+
+msgid "Did you like the site?"
+msgstr "هل أعجبك موقعنا؟"
+
+msgid "Help us improve our services, vote for your opinion!"
+msgstr "ساعدنا على تحسين خدماتنا، صوت لرأيك!"
+
+msgid "Thank you for your feedback!"
+msgstr "شكرا لتعليقاتك!"

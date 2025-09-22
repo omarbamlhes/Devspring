@@ -22,5 +22,35 @@ function devspring_theme($existing, $type, $theme, $path)
         'items' => [],
       ],
     ],
+    'footer_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    'subheader_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    'ready_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    'related_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    'information_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+    'opinion_block' => [
+      'variables' => [
+        'items' => [],
+      ],
+    ],
     ];
 }

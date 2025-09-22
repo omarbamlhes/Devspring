@@ -1,0 +1,176 @@
+{#
+/**
+ * @file
+ * Dev theme's implementation to display a full service node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}.
+ * - url: Direct URL of the current node.
+ * - attributes: HTML attributes for the containing element.
+ * - title_attributes: Same as attributes, except applied to the main title tag.
+ * - content_attributes: Same as attributes, except applied to the main content tag.
+ *
+ * @see template_preprocess_node()
+ */
+#}
+
+{{ drupal_block('devspring_subheader_block') }}
+
+<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle|clean_class, 'node--view-mode-' ~ view_mode|clean_class) }}>
+
+  <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        
+        {# Main content area #}
+        <div class="col-lg-8">
+          
+          {# Service header #}
+          <div class="section-title position-relative pb-3 mb-5">
+            {{ title_prefix }}
+            <h1{{ title_attributes.addClass('mb-0') }}>{{ label }}</h1>
+            {{ title_suffix }}
+          </div>
+
+          {# Service image if available #}
+          {% if content.field_image %}
+            <div class="service-image mb-4">
+              {{ content.field_image }}
+            </div>
+          {% endif %}
+
+          {# Service content #}
+          <div{{ content_attributes.addClass('service-content') }}>
+            
+            {# Service description/body #}
+            {% if content.body %}
+              <div class="service-description mb-4">
+                {{ content.body }}
+              </div>
+            {% endif %}
+
+            {# Additional service fields #}
+            {% if content.field_features %}
+              <div class="service-features mb-4">
+                <h3 class="h4 mb-3">{{ "Features"|t }}</h3>
+                {{ content.field_features }}
+              </div>
+            {% endif %}
+
+            {% if content.field_benefits %}
+              <div class="service-benefits mb-4">
+                <h3 class="h4 mb-3">{{ "Benefits"|t }}</h3>
+                {{ content.field_benefits }}
+              </div>
+            {% endif %}
+
+            {# Service process or methodology #}
+            {% if content.field_process %}
+              <div class="service-process mb-4">
+                <h3 class="h4 mb-3">{{ "Our Process"|t }}</h3>
+                {{ content.field_process }}
+              </div>
+            {% endif %}
+
+            {# Technologies or tools used #}
+            {% if content.field_technologies %}
+              <div class="service-technologies mb-4">
+                <h3 class="h4 mb-3">{{ "Technologies We Use"|t }}</h3>
+                {{ content.field_technologies }}
+              </div>
+            {% endif %}
+
+            {# Call to action #}
+            <div class="service-cta mt-5 p-4 bg-light rounded">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <h4 class="mb-2">{{ "Ready to Get Started?"|t }}</h4>
+                  <p class="mb-0">{{ "Contact us today to discuss how we can help you with this service."|t }}</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                  <a class="btn btn-primary py-2 px-4" href="/form/contact">
+                    <i class="fa fa-arrow-right me-2"></i>{{ "Get Quote"|t }}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        {# Sidebar #}
+        <div class="col-lg-4">
+          
+          {# Tech Service Highlights Sidebar #}
+<div class="service-sidebar bg-light p-4 rounded mb-4">
+  <h4 class="mb-4">{{ "Key Features"|t }}</h4>
+  
+  {# Service stack / Technology used #}
+  {% if content.field_technology_stack %}
+    <div class="service-tech mb-3">
+      <i class="fa fa-laptop-code text-primary me-2"></i>
+      <strong>{{ "Technology Stack"|t }}: </strong>{{ content.field_technology_stack }}
+    </div>
+  {% endif %}
+
+  {# Service delivery method #}
+  {% if content.field_delivery_method %}
+    <div class="service-delivery mb-3">
+      <i class="fa fa-rocket text-primary me-2"></i>
+      <strong>{{ "Delivery Method"|t }}: </strong>{{ content.field_delivery_method }}
+    </div>
+  {% endif %}
+
+  {# Service duration or timeline #}
+  {% if content.field_duration %}
+    <div class="service-duration mb-3">
+      <i class="fa fa-clock text-primary me-2"></i>
+      <strong>{{ "Project Timeline"|t }}: </strong>{{ content.field_duration }}
+    </div>
+  {% endif %}
+
+  {# Service complexity or scope #}
+  {% if content.field_scope %}
+    <div class="service-scope mb-3">
+      <i class="fa fa-cogs text-primary me-2"></i>
+      <strong>{{ "Scope & Complexity"|t }}: </strong>{{ content.field_scope }}
+    </div>
+  {% endif %}
+</div>
+
+     
+
+            {# Contact information #}
+            {# <div class="service-contact mt-4 pt-4 border-top">
+              <h5 class="mb-3">{{ "Need More Information?"|t }}</h5>
+              <p class="mb-2">
+                <i class="fa fa-phone text-primary me-2"></i>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope text-primary me-2"></i>
+                <a href="mailto:info@devspring.com">info@devspring.com</a>
+              </p>
+            </div> #}
+         
+
+          {# Related services #}
+          <div class="related-services bg-light p-4 rounded">
+            <h4 class="mb-4">{{ "Related Services"|t }}</h4>
+            {# This would typically be populated by a view or custom code #}
+        
+           {{ drupal_block('devspring_related_block') }}
+          
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</article>

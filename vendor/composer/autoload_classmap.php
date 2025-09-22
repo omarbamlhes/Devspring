@@ -65,4 +65,5 @@ return array(
     'SebastianBergmann\\Diff\\Parser' => $vendorDir . '/sebastian/diff/src/Parser.php',
     'SebastianBergmann\\Diff\\TimeEfficientLongestCommonSubsequenceCalculator' => $vendorDir . '/sebastian/diff/src/TimeEfficientLongestCommonSubsequenceCalculator.php',
     'System' => $vendorDir . '/pear/pear-core-minimal/src/System.php',
+    '©' => $vendorDir . '/symfony/cache/Traits/ValueWrapper.php',
 );

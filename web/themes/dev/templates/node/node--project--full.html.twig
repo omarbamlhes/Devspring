@@ -1,0 +1,344 @@
+{#
+/**
+ * @file
+ * Dev theme's implementation to display a full project node.
+ * Project showcase design - different from service template
+ */
+#}
+
+{{ drupal_block('devspring_subheader_block') }}
+
+<article{{ attributes.addClass('node', 'node--type-' ~ node.bundle|clean_class, 'project-showcase') }}>
+
+  {# Hero Section with Project Image #}
+  <div class="project-hero position-relative">
+    {% if content.field_image %}
+      <div class="hero-image position-relative">
+        {{ content.field_image }}
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 text-white py-5">
+                {{ title_prefix }}
+                <h1{{ title_attributes.addClass('display-3 fw-bold mb-3 text-white') }}>{{ label }}</h1>
+                {{ title_suffix }}
+                
+                {# Project meta info #}
+                <div class="project-meta d-flex flex-wrap gap-4 mt-4">
+                  {% if content.field_project_type %}
+                    <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">{{ content.field_project_type }}</span>
+                  {% endif %}
+                  {% if content.field_client %}
+                    <div class="meta-item">
+                      <i class="fa fa-user me-2"></i>{{ content.field_client }}
+                    </div>
+                  {% endif %}
+                  {% if content.field_project_date %}
+                    <div class="meta-item">
+                      <i class="fa fa-calendar me-2"></i>{{ content.field_project_date }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="hero-fallback bg-primary py-5">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-10 text-white">
+              {{ title_prefix }}
+              <h1{{ title_attributes.addClass('display-3 fw-bold mb-3 text-white') }}>{{ label }}</h1>
+              {{ title_suffix }}
+              
+              {% if content.field_type_project %}
+                <span class="badge bg-light text-primary fs-6 px-3 py-2 rounded-pill">{{ content.field_type_project }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  {# Main Content #}
+  <div class="project-content py-5">
+    <div class="container">
+      
+      {# Project Overview #}
+      {% if content.body %}
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="text-center mb-5">
+              <h2 class="display-6 fw-bold">{{ "Project Overview"|t }}</h2>
+              <div class="underline mx-auto bg-primary" style="width: 60px; height: 4px; margin-top: 15px;"></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="overview-content fs-5 text-muted lh-lg">
+                  {{ content.body }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {# Challenge & Solution Cards #}
+      {% if content.field_challenge or content.field_solution %}
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="bg-light py-5 px-4 rounded-4">
+              <div class="row g-5">
+                {% if content.field_challenge %}
+                  <div class="col-lg-6">
+                    <div class="challenge-card">
+                      <div class="icon-circle bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                        <i class="fa fa-exclamation-triangle fa-2x"></i>
+                      </div>
+                      <h3 class="h3 mb-3 fw-bold">{{ "The Challenge"|t }}</h3>
+                      <div class="challenge-content">
+                        {{ content.field_challenge }}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+                
+                {% if content.field_solution %}
+                  <div class="col-lg-6">
+                    <div class="solution-card">
+                      <div class="icon-circle bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                        <i class="fa fa-lightbulb fa-2x"></i>
+                      </div>
+                      <h3 class="h3 mb-3 fw-bold">{{ "Our Solution"|t }}</h3>
+                      <div class="solution-content">
+                        {{ content.field_solution }}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {# Project Gallery #}
+      {# {% if content.field_gallery %}
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="text-center mb-5">
+              <h2 class="display-6 fw-bold">{{ "Project Gallery"|t }}</h2>
+              <div class="underline mx-auto bg-primary" style="width: 60px; height: 4px; margin-top: 15px;"></div>
+            </div>
+            <div class="gallery-wrapper">
+              {{ content.field_gallery }}
+            </div>
+          </div>
+        </div>
+      {% endif %} #}
+
+      {# Features & Technologies #}
+      {% if content.field_np_features or content.field_technologies %}
+        <div class="row mb-5 g-5">
+          {% if content.field_np_features %}
+            <div class="col-lg-6">
+              <div class="features-section p-5 border rounded-4 h-100">
+                <div class="icon-circle bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                  <i class="fa fa-star fa-2x"></i>
+                </div>
+                <h3 class="h3 mb-4 fw-bold">{{ "Key Features"|t }}</h3>
+                {{ content.field_np_features }}
+              </div>
+            </div>
+          {% endif %}
+          
+          {% if content.field_technologies %}
+            <div class="col-lg-6">
+              <div class="tech-section p-5 border rounded-4 h-100">
+                <div class="icon-circle bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                  <i class="fa fa-code fa-2x"></i>
+                </div>
+                <h3 class="h3 mb-4 fw-bold">{{ "Technologies Used"|t }}</h3>
+                <div class="tech-stack">
+                  {{ content.field_technologies }}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {# Results Section #}
+      {% if content.field_results %}
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="results-section bg-primary text-white py-5 px-4 rounded-4">
+              <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-white">{{ "Results & Impact"|t }}</h2>
+                <div class="underline mx-auto bg-white" style="width: 60px; height: 4px; margin-top: 15px;"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  {{ content.field_results }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {# Testimonial #}
+      {% if content.field_testimonial %}
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card text-center p-5 bg-light rounded-4 position-relative">
+                  <div class="quote-icon position-absolute top-0 start-50 translate-middle bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="fa fa-quote-left fa-2x"></i>
+                  </div>
+                  <div class="testimonial-content mt-4 fs-5">
+                    {{ content.field_testimonial }}
+                  </div>
+                  {% if content.field_client_name %}
+                    <div class="testimonial-author mt-4">
+                      <h5 class="mb-1 fw-bold">{{ content.field_client_name }}</h5>
+                      {% if content.field_client_position %}
+                        <p class="text-muted mb-0">{{ content.field_client_position }}</p>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {# Project Details Cards #}
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold">{{ "Project Details"|t }}</h2>
+            <div class="underline mx-auto bg-primary" style="width: 60px; height: 4px; margin-top: 15px;"></div>
+          </div>
+          <div class="row g-4">
+            {% if content.field_duration %}
+              <div class="col-lg-3 col-md-6">
+                <div class="detail-card text-center p-4 border rounded-4 h-100">
+                  <div class="icon-circle bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="fa fa-clock fa-2x"></i>
+                  </div>
+                  <h5 class="fw-bold">{{ "Duration"|t }}</h5>
+                  <p class="mb-0 text-muted">{{ content.field_duration }}</p>
+                </div>
+              </div>
+            {% endif %}
+            
+            {% if content.field_team_size %}
+              <div class="col-lg-3 col-md-6">
+                <div class="detail-card text-center p-4 border rounded-4 h-100">
+                  <div class="icon-circle bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="fa fa-users fa-2x"></i>
+                  </div>
+                  <h5 class="fw-bold">{{ "Team Size"|t }}</h5>
+                  <p class="mb-0 text-muted">{{ content.field_team_size }}</p>
+                </div>
+              </div>
+            {% endif %}
+            
+            {% if content.field_industry %}
+              <div class="col-lg-3 col-md-6">
+                <div class="detail-card text-center p-4 border rounded-4 h-100">
+                  <div class="icon-circle bg-info text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="fa fa-industry fa-2x"></i>
+                  </div>
+                  <h5 class="fw-bold">{{ "Industry"|t }}</h5>
+                  <p class="mb-0 text-muted">{{ content.field_industry }}</p>
+                </div>
+              </div>
+            {% endif %}
+            
+            {% if content.field_budget_range %}
+              <div class="col-lg-3 col-md-6">
+                <div class="detail-card text-center p-4 border rounded-4 h-100">
+                  <div class="icon-circle bg-danger text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="fa fa-dollar-sign fa-2x"></i>
+                  </div>
+                  <h5 class="fw-bold">{{ "Budget"|t }}</h5>
+                  <p class="mb-0 text-muted">{{ content.field_budget_range }}</p>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      {# Call to Action #}
+      <div class="row">
+        <div class="col-12">
+          <div class="cta-section text-center py-5 px-4 rounded-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="text-white">
+              <h2 class="display-5 fw-bold mb-3">{{ "Ready to Start Your Project?"|t }}</h2>
+              <p class="fs-4 mb-4 opacity-75">{{ "Let's create something amazing together."|t }}</p>
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="/form/contact" class="btn btn-light btn-lg px-5 py-3">
+                  <i class="fa fa-rocket me-2"></i>{{ "Start Your Project"|t }}
+                </a>
+                {% if content.field_project_url %}
+                  <a href="{{ content.field_project_url }}" target="_blank" class="btn btn-outline-light btn-lg px-5 py-3">
+                    <i class="fa fa-external-link-alt me-2"></i>{{ "View Live"|t }}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {# QR Code #}
+      {% if node.field_contact_qr[0].value is defined and node.field_contact_qr[0].value %}
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12">
+              <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">{{ "QR Code"|t }}</h2>
+                <div class="underline mx-auto bg-primary" style="width: 60px; height: 4px; margin-top: 15px;"></div>
+              </div>
+              <div class="text-center">
+                <div class="qr-code-wrapper" style="padding: 20px; background: white; border: 1px solid #ddd; border-radius: 8px; display: inline-block;">
+                  {# External QR service as backup #}
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={{ node.field_contact_qr[0].value|url_encode }}" 
+                       alt="QR Code" 
+                       style="max-width: 300px; height: auto; display: block;">
+                </div>
+                <p style="margin-top: 15px; color: #666; font-size: 14px;">
+                  Scan to visit: {{ node.field_contact_qr[0].value }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+
+  {# Related Projects #}
+  {# <div class="related-projects bg-light py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold">{{ "Related Projects"|t }}</h2>
+        <div class="underline mx-auto bg-primary" style="width: 60px; height: 4px; margin-top: 15px;"></div>
+      </div>
+      {{ drupal_block('devspring_related_block') }}
+    </div>
+  </div> #}
+
+ 
+
+
+</article>

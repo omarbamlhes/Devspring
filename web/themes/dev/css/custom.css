@@ -4,3 +4,420 @@
 .services-block {
     background-color: white;
 }
+.projects-block {
+    background-color: white;
+}
+.contact-us {
+    background-color: white;
+}
+
+/* RTL/LTR Direction Support */
+.dir-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.dir-ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb-wrapper {
+  margin-top: 20px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.breadcrumb-item {
+  font-size: 16px;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 8px;
+}
+
+/* RTL Support for Breadcrumbs */
+.dir-rtl .breadcrumb-item + .breadcrumb-item::before {
+  content: "\\";
+}
+
+/* Navigation adjustments for RTL */
+.dir-rtl .navbar-nav .nav-link {
+  margin-right: 25px;
+  margin-left: 0;
+}
+
+.dir-rtl .navbar-light .navbar-nav .nav-link {
+  margin-right: 25px;
+  margin-left: 0;
+}
+
+/* Bootstrap RTL overrides */
+.dir-rtl .ps-4 {
+  padding-left: 0 !important;
+  padding-right: 1.5rem !important;
+}
+
+.dir-rtl .pe-4 {
+  padding-right: 0 !important;
+  padding-left: 1.5rem !important;
+}
+
+.dir-rtl .me-2 {
+  margin-left: 0.5rem !important;
+  margin-right: 0 !important;
+}
+
+.dir-rtl .ms-2 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+/* Language switcher RTL adjustments */
+.dir-rtl .language-switcher {
+  direction: ltr; /* Keep language switcher LTR for consistency */
+}
+
+/* Back to top button RTL */
+.dir-rtl .back-to-top {
+  right: auto;
+  left: 45px;
+}
+
+/* Carousel controls RTL */
+.dir-rtl .owl-carousel .owl-nav .owl-prev {
+  left: auto;
+  right: 20px;
+}
+
+.dir-rtl .owl-carousel .owl-nav .owl-next {
+  right: auto;
+  left: 20px;
+}
+
+/* Portfolio filters RTL */
+.dir-rtl #portfolio-flters li {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/* General text alignment for RTL content */
+.dir-rtl .text-start {
+  text-align: right !important;
+}
+
+.dir-rtl .text-end {
+  text-align: left !important;
+}
+
+.project-showcase .hero-image img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  
+  .project-showcase .detail-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+  }
+  
+  .project-showcase .features-section:hover,
+  .project-showcase .tech-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .project-showcase .testimonial-card {
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  }
+  
+  .project-showcase .icon-circle {
+    transition: all 0.3s ease;
+  }
+  
+  .project-showcase .icon-circle:hover {
+    transform: scale(1.1);
+  }
+
+  .services-list {
+    background-color: white;
+  }
+  .projects-list {
+    background-color: white;
+  }
+
+  /* الوضع الافتراضي (Light) */
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* شكل الزر */
+.dark-mode-btn {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+
+.full-width-feedback {
+  width: 100%;
+  background: #2124B1; /* أو أي لون تختاره */
+  padding: 30px 20px; /* أقل من السابق لتقليل ارتفاعه */
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width-feedback .container {
+  max-width: 1200px; /* يحافظ على المحتوى مركزي */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.full-width-feedback h3 {
+  font-size: 20px; /* أصغر ليتناسب مع الارتفاع النحيف */
+  color: #ffffff;
+  margin: 0;
+}
+
+.full-width-feedback p {
+  display: inline-block; /* يظهر بجانب العنوان */
+  font-size: 14px; /* أصغر لتقليل الارتفاع */
+  margin: 0 15px; /* مسافة بين العنوان والأزرار */ /* نخفي الوصف لتقليل الحجم */
+  color: #ffffff;
+}
+
+.full-width-feedback .feedback-buttons button {
+  padding: 8px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.full-width-feedback .like-btn {
+  background-color: #28a745; 
+  color: #fff;
+}
+
+.full-width-feedback .dislike-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.full-width-feedback .feedback-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.full-width-feedback .feedback-message {
+  display: inline-block; /* يظهر بجانب العنوان */
+  font-size: 14px; /* أصغر لتقليل الارتفاع */
+  margin: 0 15px; /* مسافة بين العنوان والأزرار */ /* نخفي الرسالة أو نعرضها لاحقًا بطريقة Overlay */
+}
+
+/* Statistics Grid Layout */
+/* .statistics-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.statistics-grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Statistic Teaser Styling */
+/* .statistic-teaser {
+  margin-bottom: 0; Remove margin since we're using Bootstrap grid spacing */
+  /* display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.statistic-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.statistic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transition: all 0.4s ease;
+}
+
+.statistic-card:hover::before {
+  left: 0;
+}
+
+.statistic-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(33, 36, 177, 0.15);
+  border-color: var(--primary);
+}
+
+.statistic-icon .icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(33, 36, 177, 0.2);
+}
+
+.statistic-icon .icon-circle::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary), var(--secondary), var(--primary));
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.statistic-card:hover .icon-circle::before {
+  opacity: 1;
+  animation: rotate 2s linear infinite;
+}
+
+.statistic-card:hover .icon-circle {
+  transform: scale(1.1);
+}
+
+.statistic-number .counter {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(33, 36, 177, 0.1);
+}
+
+.statistic-suffix {
+  margin-left: 5px;
+  opacity: 0.8;
+}
+
+.statistic-title h5 a {
+  transition: all 0.3s ease;
+}
+
+.statistic-card:hover .statistic-title h5 a {
+  color: var(--primary) !important;
+}
+
+.statistic-title p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+} */
+
+/* Animation for the rotating border */
+/* @keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Counter animation */
+/* @keyframes countUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.statistic-number .counter {
+  animation: countUp 0.6s ease-out;
+} */
+
+/* RTL Support for Statistics */
+/* .dir-rtl .statistic-suffix {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .statistic-card {
+    margin-bottom: 20px;
+  }
+  
+  .statistic-icon .icon-circle {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .statistic-number .counter {
+    font-size: 2.5rem;
+  }
+}  */
+
+/* Dark mode support */
+/* body.dark-mode .statistic-card {
+  background: #1e1e1e;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+body.dark-mode .statistic-card:hover {
+  background: #2a2a2a;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .statistic-title h5 a {
+  color: #ffffff !important;
+}
+
+body.dark-mode .statistic-card:hover .statistic-title h5 a {
+  color: var(--secondary) !important;
+}  */

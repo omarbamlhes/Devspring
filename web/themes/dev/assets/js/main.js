@@ -68,8 +68,12 @@
     });
 
 
-    // Testimonials carousel
+    // Check if current language is RTL
+    var isRTL = $('html').attr('dir') === 'rtl' || $('body').hasClass('dir-rtl');
+
+    // Testimonials carousel with RTL support
     $(".testimonial-carousel").owlCarousel({
+        rtl: isRTL, // Enable RTL support for Arabic and other RTL languages
         autoplay: true,
         smartSpeed: 1000,
         margin: 25,

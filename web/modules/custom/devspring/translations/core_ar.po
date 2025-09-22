@@ -1,0 +1,1355 @@
+# Arabic translation of Core labels.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2024-09-20 17:47+0300\n"
+"PO-Revision-Date: 2023-09-20 17:47+0300\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=((n==1)?(0):((n==0)?(1):((n==2)?(2):((((n%100)>=3)&&((n%100)<=10))?(3):((((n%100)>=11)&&((n%100)<=99))?(4):5)))));\n"
+
+
+msgid "Front Page"
+msgstr "الصفحة الرئيسية"
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Sub-title"
+msgstr "العنوان الفرعي"
+
+msgid "Second Title"
+msgstr "العنوان الثاني"
+
+msgid "Image"
+msgstr "صورة"
+
+msgid "Social Media Links"
+msgstr "روابط وسائل التواصل الاجتماعي"
+
+msgid "Facebook"
+msgstr "فيسبوك"
+
+msgid "X (Twitter)"
+msgstr "X (تويتر)"
+
+msgid "Instagram"
+msgstr "إنستغرام"
+
+msgid "LinkedIn"
+msgstr "لينكد إن"
+
+msgid "YouTube"
+msgstr "يوتيوب"
+
+msgid "Snapchat"
+msgstr "سناب شات"
+
+
+msgid "Translate"
+msgstr "ترجمة"
+
+msgid "Translate @type_name"
+msgstr "ترجمة @type_name"
+
+msgid "Allowed formats: svg,jpg,jpeg,png"
+msgstr "الصيغ المسموح بها: svg، jpg، jpeg، png"
+
+
+msgid ""
+"You must include at least one keyword to match in the content, and "
+"punctuation is ignored."
+msgid_plural ""
+"You must include at least one keyword to match in the content. "
+"Keywords must be at least @count characters, and punctuation is "
+"ignored."
+msgstr[0] ""
+"يجب عليك كتابة كلمة رئيسية واحدة على "
+"الأقل للبحث في المحتوى، وسيتم تجاهل "
+"علامات الترقيم."
+msgstr[1] ""
+"يجب عليك كتابة كلمة رئيسية واحدة على "
+"الأقل للبحث في المحتوى. يجب أن تكون "
+"الكلمات الرئيسية بطول حرفًا على "
+"الأقل، وسيتم تجاهل علامات الترقيم."
+msgstr[2] ""
+"يجب عليك كتابة كلمة رئيسية واحدة على "
+"الأقل للبحث في المحتوى. يجب أن تكون "
+"الكلمات الرئيسية بطول حرفين على "
+"الأقل، وسيتم تجاهل علامات الترقيم."
+msgstr[3] ""
+"يجب عليك كتابة كلمة رئيسية واحدة على "
+"الأقل للبحث في المحتوى. يجب أن تكون "
+"الكلمات الرئيسية بطول @count حروف على "
+"الأقل، وسيتم تجاهل علامات الترقيم."
+msgstr[4] ""
+"يجب عليك كتابة كلمة رئيسية واحدة على "
+"الأقل للبحث في المحتوى. يجب أن تكون "
+"الكلمات الرئيسية بطول @count حروف على "
+"الأقل، وسيتم تجاهل علامات الترقيم."
+msgstr[5] ""
+"يجب عليك كتابة كلمة رئيسية واحدة على "
+"الأقل للبحث في المحتوى. يجب أن تكون "
+"الكلمات الرئيسية بطول @count حروف على "
+"الأقل، وسيتم تجاهل علامات الترقيم."
+
+
+
+msgid "URL Label"
+msgstr "نص URL"
+
+msgid "Image"
+msgstr "الصورة"
+
+
+msgid "Section"
+msgstr "القسم"
+
+msgid "Features"
+msgstr "المزايا"
+
+
+msgid "Location"
+msgstr "الموقع"
+
+
+msgid "Title"
+msgstr "العنوان"
+
+
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+
+
+msgid "Video URL"
+msgstr "رابط الفيديو"
+
+
+msgid "FAQs"
+msgstr "الأسئلة الشائعة"
+
+
+msgid "Order"
+msgstr "الترتيب"
+
+
+msgid "You've reached the maximum number of OTP verification attempts. Please try again later."
+msgstr "لقد استنفذت جميع محاولات التحقق، يرجى المحاولة مرة أخرى في وقت لاحق."
+msgid "Your OTP code is @otp_code"
+msgstr "رمز التحقق الخاص بك هو @otp_code"
+msgid "The OTP has expired. Please request a new OTP."
+msgstr "انتهت صلاحية رمز التحقق. يرجى طلب رمز تحقق جديد."
+msgid "The OTP record does not exist. Please request a new OTP."
+msgstr "رمز التحقق غير موجود. يرجى طلب رمز تحقق جديد."
+msgid "OTP verified successfully."
+msgstr "تم التحقق من رمز التحقق بنجاح."
+msgid "Invalid OTP. Please try again."
+msgstr "رمز التحقق المدخل غير صحيح. يرجى المحاولة مرة أخرى."
+msgid "The OTP is not expired yet."
+msgstr "لم تنتهي صلاحية رمز التحقق بعد."
+msgid "You have reached the maximum number of attempts to resend the OTP."
+msgstr "لقد وصلت إلى الحد الأقصى لعدد محاولات إعادة إرسال رمز التحقق."
+msgid "The mobile number is required."
+msgstr "رقم الجوال مطلوب."
+msgid "Record with ID @id already exists."
+msgstr "طلب رمز التحقق برقم @id موجود بالفعل."
+msgid "Record with ID @id does not exist."
+msgstr "طلب رمز التحقق برقم @id غير موجود."
+msgid "The mobile number is invalid. Must start with 9665 and contain 9 digits."
+msgstr "رقم الجوال غير صحيح. يجب أن يبدأ بـ 9665 ويحتوي على 9 أرقام."
+
+
+msgid "The video link must be in MP4, WebM, or OGG format."
+msgstr "يجب أن يكون رابط الفيديو بتنسيق MP4 أو WebM أو OGG."
+msgid "Please upload an image or video link."
+msgstr "يرجى تحميل صورة أو رابط فيديو."
+msgid "Key Words"
+msgstr "الكلمات المفتاحية"
+
+msgid "Search"
+msgstr "البحث"
+
+msgid "Show More"
+msgstr "عرض المزيد"
+
+msgid "Source string (Built-in English)See the <a href=":available_updates">available updates</a> page for more information and to update your software."
+msgstr "سلسلة المصدر (الإنجليزية المضمنة)راجع صفحة <a href=":available_updates">التحديثات المتوفرة</a> للحصول على مزيد من المعلومات وتحديث البرنامج الخاص بك."
+
+msgid "Last saved"
+msgstr "آخر حفظ"
+
+msgid "Not saved yet"
+msgstr "لم يتم الحفظ بعد"
+
+msgid "Briefly describe the changes you have made."
+msgstr "صف بإيجاز التغييرات التي قمت بها."
+
+msgid "Not promoted"
+msgstr "غير مرقى للصفحة الرئيسية"
+
+msgid "Sticky at top of lists"
+msgstr "تثبيت في أعلى القوائم"
+
+msgid "Specify an alternative path by which this data can be accessed. For example, type "/about" when writing an about page."
+msgstr "حدد مسارًا بديلًا يمكن من خلاله الوصول إلى هذه البيانات. على سبيل المثال، اكتب "/about" عند كتابة صفحة "حول."
+
+msgid "The username of the content author."
+msgstr "اسم المستخدم لمؤلف المحتوى."
+
+msgid "The date and time that the content was created."
+msgstr "تاريخ ووقت إنشاء المحتوى."
+
+msgid "Promotion options"
+msgstr "خيارات الترقية"
+
+msgid "Promoted to front page"
+msgstr "مرقّى إلى الصفحة الرئيسية"
+
+msgid "Meta Tags"
+msgstr "العلامات التعريفية"
+
+msgid "Configure the meta tags below."
+msgstr "قم بتكوين علامات التعريف أدناه."
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of "example" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the "keywords" values from the current entity (node, term, etc)."
+msgstr "استخدم الرموز لتجنب البيانات الوصفية المكررة وعقوبات محرك البحث. على سبيل المثال، سيتم عرض قيمة "الكلمة الرئيسية" "example" على كل المحتوى باستخدام هذا التكوين، بينما يؤدي استخدام [node:field_keywords] إلى إدراج قيم "الكلمات الرئيسية" تلقائيًا من الكيان الحالي (العقدة، المصطلح، إلخ)."
+
+msgid "Basic tags"
+msgstr "العلامات الأساسية"
+
+msgid "Simple meta tags."
+msgstr "العلامات التعريفية البسيطة."
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "النص الذي سيتم عرضه في شريط العنوان لمتصفح الويب الخاص بالزائر عندما يشاهد هذه الصفحة. يمكن أيضًا استخدام علامة التعريف هذه كعنوان للصفحة عندما يقوم الزائر بإضافة هذه الصفحة إلى الإشارات المرجعية أو المفضلة، أو كعنوان للصفحة في نتيجة محرك البحث. من الشائع إضافة '[site:name]' إلى نهاية هذا، بحيث تتم إضافة اسم الموقع تلقائيًا. يوصى بألا يزيد طول العنوان عن 55 - 65 حرفًا، بما في ذلك المسافات."
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "ملخص موجز وموجز لمحتوى الصفحة بحد أقصى 160 حرفًا. يمكن لمحركات البحث استخدام علامة الوصف التعريفية لعرض مقتطف عن الصفحة في نتائج البحث."
+
+msgid "Abstract"
+msgstr "ملخص"
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is no longer supported by major search engines."
+msgstr "ملخص موجز وموجز لمحتوى الصفحة، ويفضل ألا يتجاوز 150 حرفًا. وفي حين قد تستخدم محركات البحث علامة الوصف الوصفي لعرض مقتطف عن الصفحة في نتائج البحث، فقد تستخدم علامة الملخص لأرشفة ملخص عن الصفحة. لم تعد محركات البحث الرئيسية تدعم علامة الوصف الوصفي هذه."
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "قائمة منفصلة بفواصل من الكلمات الرئيسية حول الصفحة. لم تعد هذه العلامة الوصفية مدعومة من قبل معظم محركات البحث."
+
+msgid "Allowed types: @extensions."
+msgstr "الصيغة المتاحة: @extensions."
+
+msgid "@size limit."
+msgstr "@size الحجم المسموح به."
+
+msgid "Add content block"
+msgstr "إضافة محتوى الصندوق"
+
+msgid "Add media"
+msgstr "إضافة الوسائط"
+
+msgid "Media name"
+msgstr "اسم الوسيلة الإعلامية"
+
+msgid "No media available."
+msgstr "لا تتوفر أي وسائط."
+
+msgid "Remote video"
+msgstr "فيديو عن بعد"
+
+msgid "Block types"
+msgstr "انواع الصندوق"
+
+
+msgid "Block layout"
+msgstr "تخطيط الصندوق"
+
+msgid "Comment types"
+msgstr "أنواع التعليقات"
+
+msgid "Display modes"
+msgstr "أوضاع العرض"
+
+msgid "Form modes"
+msgstr "أوضاع النموذج"
+
+msgid "Add form mode"
+msgstr "إضافة وضع النموذج"
+
+msgid "View modes"
+msgstr "أوضاع العرض"
+
+msgid "Webforms"
+msgstr "النماذج"
+
+msgid "Paragraph types"
+msgstr "أنواع الفقرات"
+
+msgid "Add paragraph type"
+msgstr "إضافة نوع الفقرة"
+
+msgid "Media types"
+msgstr "أنواع الوسائط"
+
+msgid "Basic block"
+msgstr "صندوق أساسي"
+
+msgid "Translations for %label"
+msgstr "الترجمات لـ %label"
+
+msgid "Add media type"
+msgstr "إضافة نوع الوسائط"
+
+msgid "Website feedback"
+msgstr "ردود الفعل على الموقع"
+
+msgid "Uninstall module"
+msgstr "إلغاء تثبيت الوحدة"
+
+msgid "All types"
+msgstr "جميع الانواع"
+
+msgid "Manage webforms"
+msgstr "إدارة نماذج الويب"
+
+msgid "Development settings"
+msgstr "إعدادات التطوير"
+
+msgid "These settings should only be enabled on development environments and never on production."
+msgstr "ينبغي تمكين هذه الإعدادات فقط في بيئات التطوير وليس في بيئات الإنتاج أبدًا."
+
+msgid "Do not cache markup"
+msgstr "لا تقم بتخزين العلامات مؤقتًا"
+
+msgid "Disables render cache, dynamic page cache, and page cache."
+msgstr "يقوم بتعطيل ذاكرة التخزين المؤقت للعرض وذاكرة التخزين المؤقت للصفحة الديناميكية وذاكرة التخزين المؤقت للصفحة."
+
+msgid "Twig development mode"
+msgstr "وضع تطوير Twig"
+
+msgid "Exposes Twig development settings."
+msgstr "يعرض إعدادات تطوير Twig."
+
+msgid "Region and language"
+msgstr "المنطقة واللغة"
+
+msgid "Date and time formats"
+msgstr "تنسيقات التاريخ والوقت"
+
+msgid "Content language and translation"
+msgstr "لغة المحتوى والترجمة"
+
+msgid "Change language settings for <em>content types</em>, <em>taxonomy vocabularies</em>, <em>user profiles</em>, or any other supported element on your site. By default, language settings hide the language selector and the language is the site's default language."
+msgstr "قم بتغيير إعدادات اللغة لأنواع المحتوى، ومفردات التصنيف، وملفات تعريف المستخدم، أو أي عنصر آخر مدعوم على موقعك. بشكل افتراضي، تخفي إعدادات اللغة محدد اللغة وتكون اللغة هي اللغة الافتراضية للموقع."
+
+msgid "Custom menu link"
+msgstr "رابط القائمة المخصصة"
+
+
+msgid "Custom language settings"
+msgstr "إعدادات اللغة المخصصة"
+
+msgid "Paragraph"
+msgstr "الفقرة"
+
+msgid "@label (Translation is not supported)."
+msgstr "@label (الترجمة غير مدعومة)."
+
+msgid "Start typing the title of a piece of content to select it. You can also enter an internal path such as %add-node or an external URL such as %url. Enter %front to link to the front page. Enter %nolink to display link text only. Enter %button to display keyboard-accessible link text only."
+msgstr "ابدأ بكتابة عنوان قطعة من المحتوى لتحديدها. يمكنك أيضًا إدخال مسار داخلي مثل %add-node أو عنوان URL خارجي مثل %url. أدخل %front للارتباط بالصفحة الرئيسية. أدخل %nolink لعرض نص الرابط فقط. أدخل %button لعرض نص الرابط الذي يمكن الوصول إليه باستخدام لوحة المفاتيح فقط."
+
+msgid "Meta Tags"
+msgstr "العلامة التعريفية"
+
+msgid "Menu description"
+msgstr "وصف القائمة"
+
+msgid "Manage view modes"
+msgstr "إدارة أوضاع العرض"
+
+msgid "You can enable the newly-created block for this menu on the <a href=\":blocks\">Block layout page</a>."
+msgstr "يمكنك تفعيل الصناديق الجديدة لهذه القائمة في <a href=\":blocks\">صفحة تخطيط الصناديق</a>."
+
+msgid "Menu language"
+msgstr "لغة القائمة"
+
+msgid "A flag for whether the link should be enabled in menus or hidden."
+msgstr "علم لتحديد ما إذا كان يجب تمكين الرابط في القوائم أم إخفاؤه."
+
+msgid "If selected and this menu link has children, the menu will always appear expanded. This option may be overridden for the entire menu tree when placing a menu block."
+msgstr "إذا تم التحديد وكان لرابط القائمة عناصر فرعية، ستظهر القائمة موسعة دائماً. يمكن تجاوز هذا الخيار لشجرة القائمة بأكملها عند وضع كتلة القائمة."
+
+msgid "Administrative summary"
+msgstr "ملخص إداري"
+
+msgid "Clear related data"
+msgstr "مسح البيانات ذات الصلة"
+
+msgid "Name or email contains"
+msgstr "الاسم أو البريد الإلكتروني يحتوي على"
+
+msgid "Apply to selected items"
+msgstr "تطبيق على العناصر المحددة"
+
+msgid "1 item selected"
+msgid_plural "@count items selected"
+msgstr[0] "تم تحديد عنصر واحد"
+msgstr[1] "تم تحديد @count عنصر"
+
+msgid "The email address is not made public. It will only be used if you need to be contacted about your account or for opted-in notifications."
+msgstr "لن يتم نشر عنوان البريد الإلكتروني. سيتم استخدامه فقط إذا كنت بحاجة إلى الاتصال بشأن حسابك أو للإشعارات التي تم الاشتراك فيها."
+
+msgid "Several special characters are allowed, including space, period (.), hyphen (-), apostrophe ('), underscore (_), and the @ sign."
+msgstr "يُسمح بعدد من الرموز الخاصة، بما في ذلك المسافة، النقطة (.)، الشرطة (-)، الفاصلة (')، الشرطة السفلية (_)، وعلامة @."
+
+msgid "Your virtual face or picture."
+msgstr "وجهك الافتراضي أو صورتك."
+
+msgid "This account's preferred language for emails."
+msgstr "اللغة المفضلة لهذا الحساب للرسائل الإلكترونية."
+
+msgid "This is also assumed to be the primary language of this account's profile information."
+msgstr "يُفترض أيضًا أنها اللغة الأساسية لمعلومات ملف تعريف هذا الحساب."
+
+msgid "This web page allows administrators to register new users. Users' email addresses and usernames must be unique."
+msgstr "تسمح هذه الصفحة بالمسؤولين بتسجيل مستخدمين جدد. يجب أن تكون عناوين البريد الإلكتروني وأسماء المستخدمين للمستخدمين فريدة."
+
+msgid "Role settings"
+msgstr "إعدادات الدور"
+
+msgid "No terms available. <a href=":link">Add term</a>."
+msgstr "لا توجد مصطلحات متاحة. <a href=":link">أضف مصطلح</a>."
+
+msgid "No items selected"
+msgstr "لا يتم تحديد أي عناصر"
+
+msgid "Moderated content"
+msgstr "إدارة المحتوى"
+
+msgid "Moderate content"
+msgstr "إدارة المحتوى"
+
+msgid "Change to"
+msgstr "تغيير إلى"
+
+msgid "Revisions allow you to track differences between multiple versions of your content, and revert to older versions."
+msgstr "تتيح لك المراجعات تتبع الاختلافات بين الإصدارات المتعددة للمحتوى الخاص بك، والعودة إلى الإصدارات الأقدم."
+
+msgid "@date by @username"
+msgstr "@date بواسطة @username"
+
+msgid "Current revision"
+msgstr "المراجعة الحالية"
+
+msgid "<strong>@language_name (Original language)</strong>"
+msgstr "<strong>@language_name (اللغة الأصلية)</strong>"
+
+msgid "There are no content blocks available."
+msgstr "لا توجد أي كتلة محتوى متاحة."
+
+msgid "Add a <a href=":url">content block</a>."
+msgstr "أضف <a href=":url">كتلة محتوى</a>."
+
+msgid "Add child"
+msgstr "أضف الفرعي"
+
+msgid "Translations of %label"
+msgstr "ترجمات %label"
+
+msgid "Save and go to list"
+msgstr "حفظ والذهاب إلى القائمة"
+
+msgid "<em>Current revision</em>"
+msgstr "<em>المراجعة الحالية</em>"
+
+msgid "@revision by @username"
+msgstr "@revision بواسطة @username"
+
+msgid "Content blocks"
+msgstr "كتلة محتوى"
+
+msgid "Add-ons"
+msgstr "إضافات"
+
+msgid "Webforms: Add-ons"
+msgstr "الاستمارات الويب: إضافات"
+
+msgid "Interface text language selected for page"
+msgstr "اللغة التوضيحية المحددة للصفحة"
+
+msgid "Back to site"
+msgstr "العودة إلى الموقع"
+
+msgid "Reset your password"
+msgstr "إعادة تعيين كلمة المرور الخاصة بك"
+
+msgid "%capital_name contains the following terms."
+msgstr "%capital_name يحتوي على المصطلحات التالية."
+
+msgid "Delete all translations"
+msgstr "حذف جميع الترجمات"
+
+msgid "Password reset instructions will be sent to your registered email address."
+msgstr "سيتم إرسال تعليمات إعادة تعيين كلمة المرور إلى عنوان البريد الإلكتروني المسجل الخاص بك."
+
+msgid "Forgot your password?"
+msgstr "هل نسيت كلمة المرور؟"
+
+msgid "Unrecognized username or password. <a href=":password">Forgot your password?</a>"
+msgstr "اسم المستخدم أو كلمة المرور غير معروفة. <a href=":password">هل نسيت كلمة المرور؟</a>"
+
+msgid "Add the @label role to the selected user(s)"
+msgstr "أضف دور @label إلى المستخدمين المحددين"
+
+msgid "Remove the @label role from the selected user(s)"
+msgstr "قم بإزالة دور @label من المستخدمين المحددين"
+
+msgid "Unblock the selected user(s)"
+msgstr "إلغاء حظر المستخدمين المحددين"
+
+msgid "Block the selected user(s)"
+msgstr "حظر المستخدمين المحددين"
+
+msgid "Cancel the selected user account(s)"
+msgstr "إلغاء حساب المستخدمين المحددين"
+
+msgid "@count second"
+msgid_plural "@count seconds"
+msgstr[0] "ثانية"
+msgstr[1] "@count ثانية"
+msgstr[2] "@count ثانية"
+msgstr[3] "@count ثانية"
+msgstr[4] "@count ثانية"
+msgstr[5] "@count ثانية"
+
+msgid "@count minute"
+msgid_plural "@count minutes"
+msgstr[0] "دقيقة"
+msgstr[1] "دقيقة"
+msgstr[2] "دقيقتين"
+msgstr[3] "@count دقائق"
+msgstr[4] "@count دقيقة"
+msgstr[5] "@count دقيقة"
+
+msgid "@count week"
+msgid_plural "@count weeks"
+msgstr[0] "أسبوع واحد"
+msgstr[1] "أسبوع واحد"
+msgstr[2] "أسبوعين"
+msgstr[3] "@count أسابيع"
+msgstr[4] "@count أسبوعا"
+msgstr[5] "@count أسبوع"
+
+msgid "@count month"
+msgid_plural "@count months"
+msgstr[0] "شهر واحد"
+msgstr[1] "شهر"
+msgstr[2] "شهران"
+msgstr[3] "@count أشهر"
+msgstr[4] "@count شهراً"
+msgstr[5] "@count شهر"
+
+msgid "@count year"
+msgid_plural "@count years"
+msgstr[0] "سنة واحدة"
+msgstr[1] "سنة"
+msgstr[2] "سنتان"
+msgstr[3] "@count سنوات"
+msgstr[4] "@count سنة"
+msgstr[5] "@count سنة"
+
+
+msgid "Metatag"
+msgstr "العلامة التعريفية"
+
+msgid "Metatag defaults"
+msgstr "القيم الافتراضية للعلامة التعريفية"
+
+msgid "Add default meta tags"
+msgstr "إضافة علامة تعريفية افتراضية"
+
+msgid "Add meta tag for custom route"
+msgstr "إضافة علامة تعريفية لمسار مخصص"
+
+msgid "canonical_url"
+msgstr "عنوان URL الرسمي"
+
+msgid "Separator used with multiple values"
+msgstr "الفاصل المستخدم مع القيم المتعددة"
+
+msgid "Controls the separator used when a meta tag allows multiple values. Multiple characters can be used together, it does not have to be one single character long. Defaults to ":default"."
+msgstr "يتحكم في الفاصل المستخدم عندما يسمح وسم العلامة التعريفية بقيم متعددة. يمكن استخدام عدة أحرف معًا، ولا يشترط أن يكون الفاصل حرفًا واحدًا فقط. الافتراضي هو ":default"."
+
+msgid "Entity type / Group Mapping"
+msgstr "نوع الكيان / تعيين المجموعة."
+
+msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
+msgstr "يمكن تقليص العديد من العلامات الوصفية (ميتاتاج) إلى طول محدد من أجل تحسين محركات البحث.<br/>إذا تم تعيين القيمة إلى '0' أو تركها فارغة، سيتم إبقاء العلامة الوصفية كما هي دون تقليص."
+
+msgid "Use Maxlength module to force these limits?"
+msgstr "استخدام وحدة الحد الاقصى للطول لفرض هذه الحدود؟"
+
+msgid "Install the Maxlength module to enable this option."
+msgstr "قم بتثبيت وحدة الحد الاقصى للطول لتمكين هذه الخيار"
+
+msgid "Metatag Trimming Options"
+msgstr "خيارات تقليم العلامات التعريفية "
+msgid "Configure the Metatag module"
+msgstr "تكوين وحدة العلامات التعريفية"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "حدد مجموعات العلامة التعريفية التي يجب ان تكون متاحة لاي نوع كيان/مجموعة من التركيبات.المجموعات غير المحددة لن تظهر في نموذج التكوين لذلك النوع من الكيانات، مما يقلل من حجم النموذج ويزيد من الاداء.إذا لم يتم تحديد أي مجموعات لنوع معين،ستظهر جميع المجموعات."
+
+msgid "Trimming options"
+msgstr "خيارات التقليم."
+
+
+msgid "Characters to trim"
+msgstr "الأحرف التي سيتم تقليصها"
+
+
+msgid "A list of characters to trim at the end of all metatags. Provide a single string without any separators, e.g. "|,." (instead of "| , ."). Note that spaces, tabs, new lines, carriage returns and vertical tabs (" \n\r\t\v") will be trimmed automatically and do not need to be listed in this field. The trimming is applied at the very end after the tag is trimmed for length, and after the trimming option was executed."
+msgstr "قائمة بالأحرف التي سيتم تقليصها في نهاية جميع العلامات التعريفية (ميتاتاج). قدم سلسلة مفردة بدون أي فواصل، مثل "|,." (بدلاً من "| , ."). ملاحظة: المسافات، والفواصل، والأسطر الجديدة، وعلامات الرجوع، وعلامات التبويب الرأسية (" \n\r\t\v") سيتم تقليصها تلقائيًا ولا حاجة لإدراجها في هذا الحقل. يتم تطبيق عملية التقليم في النهاية بعد تقليص العلامة التعريفية للطول، وبعد تنفيذ خيار التقليم."
+
+msgid "Metatag widget options"
+msgstr "خيارات أداة العلامة التعريفية"
+
+msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
+msgstr "خيارات متنوعة لأداة الحقل المستخدمة في نماذج الكيانات، مثل نماذج أنواع المحتوى."
+
+msgid "Scroll maximum height"
+msgstr "الحد الأقصى لارتفاع التمرير."
+
+msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
+msgstr "لتمكين التمرير، يرجى إدخال قيمة ووحداتها، مثل 500px، 8rem، إلخ. إزالة هذه القيمة سيؤدي إلى إزالة التمرير."
+
+msgid "Configure the meta tags below."
+msgstr "قم بتكوين العلامات الوصفية أدناه."
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of "example" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the "keywords" values from the current entity (node, term, etc)."
+msgstr "استخدم الرموز لتجنب البيانات الوصفية المكررة والعقوبات من محركات البحث. على سبيل المثال، قيمة 'الكلمة المفتاحية' التي هي "example" ستظهر على جميع المحتويات التي تستخدم هذا التكوين، بينما استخدام [node:field_keywords] يقوم بإدراج قيم "الكلمات المفتاحية" من الكيان الحالي (العقدة، المصطلح، إلخ) بشكل تلقائي."
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the "Token" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the "Thumbnail" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "لاستخدام الرموز مع حقول الصور، يجب تمكين إعدادات العرض "Token" لحقل الصورة في تلك الحزمة الكيانية (نوع المحتوى، المصطلح، إلخ)، ويجب ألا يكون حقل الصورة مخفيًا، ويجب تعيينه للإخراج كصورة، مثلًا باستخدام مُنسق الحقل "Thumbnail". يُوصى أيضًا باستخدام نمط صورة مناسب يقوم بتغيير حجم الصورة بدلاً من إخراج الصورة الأصلية؛ راجع أوصاف العلامات الوصفية الفردية للحصول على توصيات الحجم."
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "اختر نوع العلامات الوصفية الافتراضية التي ترغب في إضافتها."
+
+msgid "Simple meta tags."
+msgstr "علامات التعريفية البسيطة."
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "النص الذي سيُعرض في شريط العنوان في متصفح الويب للمستخدم عندما يعرض هذه الصفحة. يمكن استخدام هذه العلامة الوصفية أيضًا كعنوان للصفحة عندما يقوم الزائر بحفظ الصفحة في المفضلة أو إضافتها إلى المفضلة، أو كعنوان الصفحة في نتائج محرك البحث. من الشائع إضافة '[site:name]' في نهاية هذا العنوان، بحيث يتم إضافة اسم الموقع تلقائيًا. يُوصى بأن لا يتجاوز العنوان 55 - 65 حرفًا، بما في ذلك المسافات."
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "ملخص قصير وموجز لمحتوى الصفحة لا يتجاوز 160 حرفًا. يمكن لمحركات البحث استخدام علامة التعريفية الخاصة بالوصف لعرض مقتطف عن الصفحة في نتائج البحث."
+
+msgid "Abstract"
+msgstr "ملخص"
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is no longer supported by major search engines."
+msgstr "ملخص قصير وموجز لمحتوى الصفحة، يفضل أن يكون 150 حرفًا أو أقل. بينما يمكن لمحركات البحث استخدام علامة الميتاتاج الخاصة بالوصف لعرض مقتطف عن الصفحة في نتائج البحث، يمكن استخدام علامة الملخص لأرشفة ملخص عن الصفحة. لم تعد محركات البحث الكبرى تدعم هذه العلامة الوصفية."
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "قائمة بالكلمات المفتاحية عن الصفحة مفصولة بفواصل. لم تعد معظم محركات البحث تدعم هذه العلامة الوصفية."
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "العلامات التعريفية قد لاتكون بحاجة إليها العديد من المواقع"
+
+msgid "Geographical position"
+msgstr "الموقع الجغرافي"
+
+msgid "Geo-spatial information in 'latitude; longitude' format, e.g. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>see Wikipedia for details</a>."
+msgstr "معلومات جغرافية بتنسيق 'خط العرض; خط الطول'، مثل '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='انظر ويكيبيديا للتفاصيل حول نظام الإحداثيات الجغرافية'>انظر ويكيبيديا للتفاصيل</a>."
+
+msgid "Geo-spatial information in 'latitude, longitude' format, e.g. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>see Wikipedia for details</a>."
+msgstr "معلومات جغرافية بتنسيق 'خط العرض، خط الطول'، مثل '50.167958، -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='انظر ويكيبيديا للتفاصيل حول عناوين ICBM'>راجع ويكيبيديا للتفاصيل</a>."
+
+msgid "Geographical place name"
+msgstr "اسم المكان الجغرافي"
+
+msgid "A location's formal name."
+msgstr "الاسم الرسمي للموقع."
+
+msgid "Geographical region"
+msgstr "المنطقة الجغرافية"
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "رمز الدولة الدولي المكون من حرفين لموقع معين، مع إمكانية إضافة رمز إقليمي مكون من حرفين، مثل 'US-NH' لولاية نيوهامبشاير في الولايات المتحدة الأمريكية."
+
+msgid "Shortlink URL"
+msgstr "رابط قصير"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "رابط مختصر، غالبًا ما يتم إنشاؤه بواسطة خدمة تقصير الروابط."
+
+msgid "Robots"
+msgstr "روبوتات"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "فهرسة - السماح لمحركات البحث بفهرسة هذه الصفحة (مفترض)."
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "اتبع - السماح لمحركات البحث بمتابعة الروابط على هذه الصفحة (مفترض)."
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - يمنع محركات البحث من فهرسة هذه الصفحة."
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - يمنع محركات البحث من متابعة الروابط على هذه الصفحة."
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - يمنع ظهور النسخ المخزنة من هذه الصفحة في نتائج البحث."
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - يمنع ظهور الوصف في نتائج البحث، ويمنع تخزين الصفحة في الذاكرة المؤقتة."
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - يمنع محركات البحث من فهرسة الصور على هذه الصفحة."
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - يمنع محركات البحث من عرض خيار ترجمة هذه الصفحة في نتائج البحث."
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "يوفر لمحركات البحث تعليمات محددة حول ما يجب فعله عند فهرسة هذه الصفحة."
+
+msgid "Max Snippet"
+msgdtr "أقصى مقتطف."
+
+msgid "Use a number character as a textual snippet for this search result. "0" equals "nosnippet". "-1" will let the search engine decide the most effective length."
+msgstr "استخدم رقمًا كـ مقتطف نصي لهذه النتيجة في البحث. "0" يعني "nosnippet". "-1" سيتيح لمحرك البحث تحديد الطول الأكثر فعالية."
+
+msgid "Use a number character as a textual snippet for this search result. "0" equals "nosnippet". "-1" will let the search engine decide the most effective length."
+msgstr "استخدم رقمًا كـ مقتطف نصي لهذه النتيجة في البحث. "0" يعادل "nosnippet". "-1" سيسمح لمحرك البحث بتحديد الطول الأكثر فعالية."
+
+msgid "Max Video Preview"
+msgstr "أقصى معاينة للفيديو"
+
+msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. "0" will use a static a image. "-1" means there is no limit."
+msgstr "استخدم أقصى عدد من الثواني كمقتطف فيديو للفيديوهات في هذه الصفحة في نتائج البحث. "0" سيستخدم صورة ثابتة. "-1" يعني أنه لا يوجد حد."
+
+msgid "Max Image Preview"
+msgstr "أقصى معاينة للصورة"
+
+msgid "Set the maximum size of an image preview for this page in a search results."
+msgstr "حدد الحد الأقصى لحجم معاينة الصورة لهذه الصفحة في نتائج البحث."
+
+msgid "Unavailable after date"
+msgstr "غير متاح بعد تاريخ"
+
+msgid "Do not show this page in search results after the specified date"
+msgstr "لا تعرض هذه الصفحة في نتائج البحث بعد التاريخ المحدد."
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "رابط إلى الموقع المفضل أو عنوان URL لمحتوى هذه الصفحة، للمساعدة في القضاء على عقوبات المحتوى المكرر من محركات البحث."
+
+msgid "Next page URL"
+msgstr "رابط الصفحة التالية"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "يستخدم للمحتوى المقسم إلى صفحات عن طريق توفير رابط URL مع خاصية rel='next'."
+
+msgid "Previous page URL"
+msgstr "رابط الصفحة السابقة"
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "يستخدم للمحتوى المقسم إلى صفحات عن طريق توفير رابط URL مع خاصية rel='prev'."
+
+msgid "Original source"
+msgstr "المصدر الأصلي"
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "يستخدم للإشارة إلى الرابط الذي نشر القصة لأول مرة، ويمكن أن يرتبط إما بعنوان URL داخلي أو مصدر خارجي. إذا لم يكن الرابط الكامل معروفًا، يمكن استخدام رابط جزئي أو مجرد اسم النطاق."
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services. This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "صورة مرتبطة بهذه الصفحة، لاستخدامها كصورة مصغرة في الشبكات الاجتماعية والخدمات الأخرى. سيكون بالإمكان استخراج الرابط من حقل الصورة إذا تم تكوين الحقل بشكل صحيح."
+
+msgid "Generator"
+msgstr "المنشئ"
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "يصف اسم ورقم الإصدار للبرمجيات أو أداة النشر المستخدمة لإنشاء الصفحة."
+
+msgid "Define the author of a page."
+msgstr "تعريف مؤلف الصفحة."
+
+msgid "Referrer policy"
+msgstr "سياسة المحيل"
+
+msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
+msgstr "يشير إلى محركات البحث وأدوات جمع البيانات الأخرى ما إذا كان يجب متابعة الروابط أم لا. راجع مواصفات W3C لمزيد من التفاصيل. ملاحظة: هذا يؤدي نفس الغرض من رأس HTTP بنفس الاسم."
+
+msgid "Set cookie"
+msgstr "تعيين ملف تعريف الارتباط"
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>يتم تعيين ملف تعريف الارتباط</a> على متصفح الزائر. يمكن أن يكون بتنسيق NAME=VALUE، أو بتنسيق أكثر تفصيلاً يتضمن المسار وتاريخ الانتهاء؛ راجع الرابط للحصول على التفاصيل الكاملة حول الصيغة."
+
+msgid "Rights"
+msgstr "الحقوق"
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "تفاصيل عن الملكية الفكرية، مثل حقوق الطبع والنشر أو العلامات التجارية؛ لا تحمي محتوى الموقع أو الملكية الفكرية بشكل تلقائي."
+
+msgid "Source string (Built-in English)This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details"
+msgstr "يتم التواصل مع جوجل من خلال هذا الوسم الميتا. هناك توجيهان مدعومان حالياً: 'nositelinkssearchbox' لعدم عرض مربع بحث الروابط داخل الموقع، و 'notranslate' لطلب من جوجل عدم عرض ترجمة للصفحة. يمكن إضافة الخيارين معاً، فقط افصل بينهما بفاصلة. راجع الوسوم الميتا التي يفهمها جوجل لمزيد من التفاصيل."
+
+msgid "Rating"
+msgstr "التقييم"
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "يتم استخدامه لتقييم المحتوى من حيث ملاءمته للجمهور. لهذا الوسم تأثير ضئيل معروف على ترتيب محركات البحث، لكنه يمكن أن يُستخدم من قبل المتصفحات، امتدادات المتصفح، والتطبيقات. أكثر الخيارات شيوعاً هي عام، ناضج، مقيد، 14 سنة، آمن للأطفال. إذا كنت تتبع توثيق RTA يجب أن تدخل RTA-5042-1996-1400-1577-RTA."
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "عدد الثواني التي يجب الانتظار قبل تحديث الصفحة. يمكن أيضاً أن يتم إعادة التوجيه إلى صفحة أخرى باستخدام التنسيق '5; url=https://example.com/'، والذي سيتم تفعيله بعد خمس ثوان."
+
+msgid "Revisit After"
+msgstr "إعادة الزيارة بعد"
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "أخبر محركات البحث بموعد إعادة فهرسة الصفحة. قلة قليلة من محركات البحث تدعم هذا الوسم، ومن الأكثر فائدة استخدام ملف خريطة الموقع XML."
+
+msgid "Cache control"
+msgstr "تحكم في التخزين المؤقت"
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "يُستخدم للتحكم فيما إذا كان المتصفح يقوم بتخزين صفحة معينة محلياً. لا يُستخدم عادةً. يجب استخدامه جنباً إلى جنب مع وسم الميتا Pragma."
+
+msgid "Expires"
+msgstr "انتهاء الصلاحية"
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "التحكم في موعد انتهاء صلاحية التخزين المؤقت الداخلي للمتصفح للصفحة الحالية. يجب أن يكون التاريخ عبارة عن سلسلة تاريخ متوافقة مع RFC-1123 تم تمثيلها بتوقيت غرينيتش (GMT)، مثل 'Thu, 01 Sep 2016 00:12:56 GMT'. قم بتعيينه إلى '0' لوقف تخزين الصفحة مؤقتًا تمامًا."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "يُستخدم للتحكم فيما إذا كان المتصفح يقوم بتخزين صفحة معينة محلياً. لا يُستخدم بشكل شائع. يجب استخدامه جنباً إلى جنب مع وسم الميتا Cache-Control."
+
+msgid "Basic tags"
+msgstr "الوسوم الأساسية"
+
+msgid "Favicons & touch icons"
+msgstr "أيقونات المفضلة وأيقونات اللمس"
+
+msgid "Meta tags for displaying favicons of various sizes and types. All values should be either absolute or relative URLs. No effects are added to the "precomposed" icons."
+msgstr ""علامات الميتا لعرض الأيقونات المفضلة بأحجام وأنواع مختلفة. يجب أن تكون جميع القيم إما روابط مطلقة أو نسبية. لا يتم إضافة أي تأثيرات على الأيقونات "المركبة مسبقًا"."
+
+msgid "Default icon"
+msgstr "الأيقونة الافتراضية"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "الأيقونة المفضلة التقليدية يجب أن تكون إما صورة بصيغة GIF أو ICO أو JPG/JPEG أو PNG."
+
+msgid "Mask icon (SVG)
+msgstr "أيقونة القناع (SVG)"
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "ملف رسومي متجه قابل للتطوير بتدرج رمادي (SVG)."
+
+msgid "Mask icon color"
+msgstr "لون أيقونة القناع"
+
+msgid "Color attribute for SVG (mask) icon in hexadecimal format, e.g. '#0000ff'. Setting it will break HTML validation. If not set macOS Safari ignores the Mask Icon entirely, making the Icon: SVG completely useless."
+msgstr ""خاصية اللون لأيقونة SVG (القناع) بصيغة تنسيق اللون الست عشري، مثل '#0000ff'. تعيينها سيؤدي إلى كسر التحقق من صحة HTML. إذا لم يتم تعيينها، فإن متصفح Safari على macOS سيتجاهل أيقونة القناع تمامًا، مما يجعل أيقونة SVG غير صالحة تمامًا."
+
+msgid "Icon: 16px x 16px"
+msgstr "الأيقونة: 16 بكسل × 16 بكسل"
+
+msgid "Icon: 32px x 32px"
+msgstr "الأيقونة: 32 بكسل × 32 بكسل"
+
+msgid "Icon: 96px x 96px"
+msgstr "الأيقونة: 96 بكسل × 96 بكسل"
+
+msgid "Icon: 192px x 192px"
+msgstr "الأيقونة: 192 بكسل × 192 بكسل"
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "صورة PNG بعرض 16 بكسل وارتفاع 16 بكسل."
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "صورة PNG بعرض 32 بكسل وارتفاع 32 بكسل."
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "سيكون بإمكانه استخراج الرابط من حقل الصورة إذا تم تكوين الحقل بشكل صحيح."
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "صورة PNG بعرض 96 بكسل وارتفاع 96 بكسل."
+
+msgid "A PNG image that is 192px wide by 192px high.
+msgstr "صورة PNG بعرض 192 بكسل وارتفاع 192 بكسل."
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "أيقونة لمسية لأجهزة آبل: 60 بكسل × 60 بكسل"
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "أيقونة لمسية لأجهزة آبل: 72 بكسل × 72 بكسل"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "صورة PNG بعرض 60 بكسل وارتفاع 60 بكسل. تُستخدم مع أجهزة آيفون غير Retina، وآيبود تاتش، وأجهزة أندرويد 2.1 وما فوق."
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "صورة PNG بعرض 72 بكسل وارتفاع 72 بكسل. تُستخدم مع جهاز iPad mini وأجهزة iPad الجيل الأول والثاني (عرض @1x) على iOS <= 6."
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "أيقونة لمسية لأجهزة آبل: 76 بكسل × 76 بكسل"
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "صورة PNG بعرض 76 بكسل وارتفاع 76 بكسل. تُستخدم مع جهاز iPad mini وجهاز iPad الجيل الثاني (عرض @1x) على iOS >= 7."
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "أيقونة لمسية لأجهزة آبل: 114 بكسل × 114 بكسل"
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "صورة PNG بعرض 114 بكسل وارتفاع 114 بكسل. تُستخدم مع آيفون مزود بشاشة @2x يعمل بنظام iOS <= 6."
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "أيقونة لمسية لأجهزة آبل: 120 بكسل × 120 بكسل"
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "صورة PNG بعرض 120 بكسل وارتفاع 120 بكسل. تُستخدم مع آيفون مزود بشاشة @2x يعمل بنظام iOS >= 7."
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "أيقونة لمسية لأجهزة آبل: 144 بكسل × 144 بكسل"
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "صورة PNG بعرض 144 بكسل وارتفاع 144 بكسل. تُستخدم مع جهاز iPad مزود بشاشة @2x يعمل بنظام iOS <= 6."
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "أيقونة لمسية لأجهزة آبل: 152 بكسل × 152 بكسل"
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "أيقونة لمسية لأجهزة آبل: 180 بكسل × 180 بكسل"
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 57 بكسل × 57 بكسل"
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 72 بكسل × 72 بكسل"
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 76 بكسل × 76 بكسل"
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 114 بكسل × 114 بكسل"
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 120 بكسل × 120 بكسل"
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 144 بكسل × 144 بكسل"
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 152 بكسل × 152 بكسل"
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "أيقونة لمسية لأجهزة آبل (مركبة مسبقًا): 180 بكسل × 180 بكسل"
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "صورة PNG بعرض 152 بكسل وارتفاع 152 بكسل. تُستخدم مع جهاز iPad مزود بشاشة @2x يعمل بنظام iOS >= 7."
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display"
+msgstr "صورة PNG بعرض 180 بكسل وارتفاع 180 بكسل. تُستخدم مع آيفون 6 بلس مزود بشاشة @3x."
+
+msgid "facebook"
+msgstr "فيس بوك"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "مجموعة من علامات الميتا خصيصًا للتحكم في الوظائف المتقدمة مع فيسبوك."
+
+msgid "A set of meta tags specially for controlling advanced functionality with <a href=':fb'>Facebook</a>.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "مجموعة من علامات الميتا خصيصًا للتحكم في الوظائف المتقدمة مع <a href=':fb'>فيسبوك</a>.<br><br>أداة <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> من فيسبوك تتيح لك معاينة كيفية ظهور المحتوى الخاص بك عند مشاركته على فيسبوك وتصحيح أي مشاكل في علامات Open Graph الخاصة بك."
+
+msgid "Facebook Pages"
+msgstr "صفحات فيسبوك"
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "رمز URL للمطالبة بمقالات فيسبوك الفورية."
+
+msgid "Facebook Admins"
+msgstr "مديرو فيسبوك"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "قائمة مفصولة بفواصل لمعرفات المستخدمين على فيسبوك للأشخاص الذين يُعتبرون مديري أو مشرفي هذه الصفحة."
+
+
+msgid "Facebook Application ID"
+
+msgstr "معرف تطبيق فيسبوك"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "قائمة مفصولة بفواصل لمعرفة تطبيقات منصة فيسبوك المطبقة لهذا الموقع."
+
+msgid "Twitter Cards"
+msgstr "بطاقات تويتر"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "مجموعة من علامات الميتا خصيصًا للتحكم في الملخصات المعروضة عند مشاركة المحتوى على <a href='https://twitter.com/'>تويتر</a>."
+
+msgid "Twitter card type"
+msgstr "نوع بطاقة تويتر"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li></ul>"
+msgstr "ملاحظات:<ul><li>لا توجد حقول أخرى مطلوبة لبطاقة الملخص</li><li>تتطلب بطاقة مشغل الوسائط حقول "العنوان" و"الوصف" و"عنوان URL لمشغل الوسائط" و"عرض مشغل الوسائط" و"ارتفاع مشغل الوسائط" و"الصورة"،</li><li>تتطلب بطاقة الملخص ذات البطاقة ذات الصورة الكبيرة حقل "الملخص" وحقل "الصورة"،</li><li>تتطلب بطاقة التطبيق حقل "معرف تطبيق iPhone" وحقل "معرف تطبيق iPad" وحقل "معرف تطبيق Google Play"،</li></ul>"
+
+
+msgid "Site's Twitter account"
+msgstr "حساب تويتر للموقع"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "اسم المستخدم @ للموقع، والذي سيظهر في أسفل البطاقة؛ يجب أن يتضمن رمز @."
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "وصف يُلخص المحتوى بشكل موجز للصفحة، بما يتناسب مع العرض داخل تغريدة. لا تستخدم النص العنوان كوصف، أو استخدم هذا الحقل لوصف الخدمات العامة التي يقدمها الموقع. سيتم تقصير النص بواسطة تويتر إلى 200 حرف."
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "عنوان الصفحة، الذي يجب أن يكون موجزًا؛ سيتم تقصيره إلى 70 حرفًا بواسطة تويتر. هذا الحقل مطلوب ما لم يتم تعيين حقل 'النوع' إلى 'صورة'."
+
+
+msgid "Site's Twitter account ID"
+msgstr "معرف حساب تويتر للموقع"
+
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "معرف حساب تويتر الرقمي للموقع، والذي سيظهر في أسفل البطاقة."
+
+
+msgid "Creator's Twitter account"
+msgstr "حساب تويتر للمؤلف"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "اسم المستخدم @ للمؤلف / المؤلف المصنف لهذه الصفحة، ب"
+
+msgid "Creator's Twitter account ID"
+msgstr "معرف حساب تويتر للمنشئ"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "معرف حساب تويتر للمؤلف / المؤلف المصنف لهذه الصفحة
+
+msgid "Image URL"
+msgstr "رابط الصورة"
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+magstr ""رابط لصورة فريدة تمثل محتوى الصفحة. لا تستخدم صورة عامة مثل شعار موقعك، صورة المؤلف، أو صورة أخرى تمتد عبر صفحات متعددة. سيتم تغيير حجم الصور التي تزيد عن 120x120 بكسل وتقطيعها بشكل مربع بناءً على البُعد الأطول. لن يتم عرض الصور التي تقل عن 60x60 بكسل. إذا تم تعيين 'النوع' إلى صورة، يجب أن تكون الصورة على الأقل 280x150 بكسل"
+
+msgid "Image alternative text"
+msgstr "النص البديل للصورة"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "النص البديل للصورة المرتبطة. محدود إلى 420 حرفًا."
+
+msgid "App store country"
+msgstr "دولة متجر التطبيقات"
+
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "إذا لم يكن تطبيقك متاحًا في متجر التطبيقات الأمريكي، يجب عليك تعيين هذه القيمة إلى رمز الدولة المكون من حرفين للمتجر الذي يحتوي على تطبيقك."
+
+
+msgid "iPhone app name"
+msgstr "اسم تطبيق آيفون"
+
+
+
+msgid "The name of the iPhone app."
+msgstr "اسم تطبيق آيفون."
+
+
+
+msgid "iPhone app's custom URL scheme"
+msgstr "نظام URL المخصص لتطبيق آيفون"
+
+
+
+msgid "The iPhone app's custom URL scheme (must include "://" after the scheme name)."
+msgstr "نظام URL المخصص لتطبيق آيفون (يجب أن يتضمن '://' بعد اسم النظام)."
+
+
+
+msgid "iPhone app ID"
+msgstr "معرف تطبيق آيفون"
+
+
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "قيمة سلسلة، يجب أن تكون التمثيل الرقمي لمعرف تطبيق آيفون الخاص بك في متجر التطبيقات."
+
+
+
+msgid "iPad app name"
+msgstr "اسم تطبيق iPad"
+
+
+msgid "The name of the iPad app."
+msgstr "اسم تطبيق iPad."
+
+msgid "iPad app ID"
+msgstr "معرف تطبيق iPad"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+magstr "قيمة سلسلة، يجب أن تكون التمثيل الرقمي لمعرف تطبيق آيباد الخاص بك في متجر التطبيقات."
+
+
+msgid "iPad app's custom URL scheme"
+msgstr "نظام URL المخصص لتطبيق iPad"
+
+msgid "The iPad app's custom URL scheme (must include "://" after the scheme name)."
+msgstr "نظام URL المخصص لتطبيق آيباد (يجب أن يتضمن '://' بعد اسم النظام)."
+
+
+
+msgid "Google Play app name"
+msgstr "اسم تطبيق جوجل بلاي"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "اسم التطبيق في متجر تطبيقات جوجل بلاي."
+
+
+msgid "Google Play app ID"
+msgstr "معرف تطبيق جوجل بلاي"
+
+
+msgid "Your app ID in the Google Play Store (i.e. "com.android.app")."
+msgstr "معرف تطبيقك في متجر جوجل بلاي (على سبيل المثال، 'com.android.app')."
+
+
+
+msgid "Google Play app's custom URL scheme"
+msgstr "نظام URL المخصص لتطبيق جوجل بلاي"
+
+
+msgid "The Google Play app's custom URL scheme (must include "://" after the scheme name)."
+msgstr "نظام URL المخصص لتطبيق جوجل بلاي (يجب أن يتضمن '://' بعد اسم النظام)."
+
+
+msgid "Media player URL"
+msgstr "رابط مشغل الوسائط"
+
+msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
+msgstr "type."الرابط الكامل لتحميل مشغل الوسائط، تحديدًا iframe لفيديو مدمج بدلاً من الرابط إلى صفحة تحتوي على مشغل. مطلوب عند استخدام نوع بطاقة المشغل."
+
+
+msgid "Media player width"
+msgstr "عرض مشغل الوسائط"
+
+
+
+msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "الطول مشغل الوسائط iframe، بالبكسل. مطلوب عند استخدام نوع"
+
+msgid "Media player height"
+msgstr "ارتفاع مشغل الوسائط"
+
+
+
+
+msgid "MP4 media stream URL"
+msgstr "رابط بث الوسائط MP4"
+
+
+msgid "Alternative language links (hreflang)"
+msgstr "روابط اللغة البديلة (hreflang)"
+
+
+msgid "The height of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "ارتفاع iframe لمشغل الوسائط، بالبكسل. مطلوب عند استخدام نوع بطاقة المشغل."
+
+
+msgid "The MIME type for the media contained in the stream URL, as defined by <a href=':url'>RFC 4337</a>."
+msgstr "نوع MIME للوسائط الموجودة في رابط البث، كما هو معرف في <a href=':url'>RFC 4337</a>."
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "تم تصميم هذه العلامات الميتا لتوجيه الزوار إلى إصدارات الصفحة الحالية بلغات أخرى."
+
+msgid "Default locale (x-default)"
+msgstr "الإعداد المحلي الافتراضي (x-default)"
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "يجب أن يشير هذا إلى النسخة من الصفحة المخصصة للإعداد المحلي الرئيسي أو الأساسي، مثل النسخة الأصلية لمقالة تم ترجمتها إلى لغات أخرى."
+
+msgid "URL for a version of this page in %langcode"
+msgstr "رابط النسخة من هذه الصفحة باللغة %langcode"
+
+msgid "Arabic"
+msgstr "العربية"
+
+msgid "Region and language"
+msgstr "المنطقة واللغة"
+
+msgid "User interface translation"
+msgstr "ترجمة واجهة المستخدمة"
+
+msgid "Configuration translation"
+msgstr "ترجمة التكوين"
+
+msgid "Configure the import of translation files, and add or customize interface translations."
+msgstr "تكوين استيراد ملفات الترجمة، وإضافة أو تخصيص ترجمات الواجهة."
+
+msgid "Translate the configuration."
+msgstr "ترجمة التكوين."
+
+msgid "Translate the interface."
+msgstr "ترجمة الواجهة."
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "قم بتكوين القيم الافتراضية للعلامات التعريفية العامة أدناه. يمكن ترك العلامات التعريفية كما هي في الوضع الافتراضي."
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "يتم تمرير أنماط العلامات التعريفية من مستوى إلى آخر ما لم يتم تجاوزها. لعرض ملخص للعلامات التعريفية الفردية والنمط الخاص بتكوين معين، انقر على اسمه أدناه."
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "إذا لم يكن التكوين على المستوى الأعلى محددًا بما فيه الكفاية، يمكن إضافة تكوينات افتراضية إضافية للعلامات التعريفية لنوع كيان أو حزمة كيان معينة، على سبيل المثال، لنوع محتوى معين."
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the "Metatag" field to that entity type through its normal field settings pages."
+msgstr "يمكن تحسين العلامات التعريفية بشكل أكبر على مستوى الكيان الفردي، مثل العقد الفردية، من خلال إضافة حقل "Metatag" إلى نوع الكيان هذا عبر صفحات إعدادات الحقول المعتادة له."
+
+msgid "Did you mean:"
+msgstr "هل تقصد:"
+
+msgid "Did you mean: @suggestion"
+msgstr "هل تقصد: @suggestion"
+
+msgid "@count second"
+msgid_plural "@count seconds"
+msgstr[0] "ثانية"
+msgstr[1] "ثانية"
+msgstr[2] "ثانيتين"
+msgstr[3] "@count ثوان"
+msgstr[4] "@count ثانية"
+msgstr[5] "@count ثانية"
+
+msgid "@count minute"
+msgid_plural "@count minutes"
+msgstr[0] "دقيقة واحدة"
+msgstr[1] "0 دقائق"
+msgstr[2] "دقيقتان"
+msgstr[3] "@count دقائق"
+msgstr[4] "@count دقيقة"
+msgstr[5] "@count دقيقة"
+
+msgid "@count hour"
+msgid_plural "@count hours"
+msgstr[0] "ساعة"
+msgstr[1] "ساعة"
+msgstr[2] "ساعتين"
+msgstr[3] "@count ساعات"
+msgstr[4] "@count ساعة"
+msgstr[5] "@count ساعة"
+
+msgid "@count workday"
+msgid_plural "@count workdays"
+msgstr[0] "يوم عمل"
+msgstr[1] "يوم عمل"
+msgstr[2] "يومان عمل"
+msgstr[3] "@count أيام عمل"
+msgstr[4] "@count يوم عمل"
+msgstr[5] "@count يوم عمل"
+
+msgid "@count week"
+msgid_plural "@count weeks"
+msgstr[0] "أسبوع"
+msgstr[1] "أسبوع"
+msgstr[2] "أسبوعين"
+msgstr[3] "@count أسابيع"
+msgstr[4] "@count أسبوع"
+msgstr[5] "@count أسبوع"
+
+msgid "@count month"
+msgid_plural "@count months"
+msgstr[0] "شهر"
+msgstr[1] "شهر"
+msgstr[2] "شهرين"
+msgstr[3] "@count أشهر"
+msgstr[4] "@count شهر"
+msgstr[5] "@count شهر"
+
+msgid "@count year"
+msgid_plural "@count years"
+msgstr[0] "سنة"
+msgstr[1] "سنة"
+msgstr[2] "سنتين"
+msgstr[3] "@count سنوات"
+msgstr[4] "@count سنة"
+msgstr[5] "@count سنة"
+
+msgid "Login Button"
+msgstr "دخول كموظف"
+
+
+msgid "Config pages library"
+msgstr "مكتبة إعدادات الصفحات"
+
+msgid "Config pages"
+msgstr "إعدادات الصفحات"
+
+msgid "Exposed"
+msgstr "مكشوفة"
+
+msgid "Exposed as tokens"
+msgstr "مكشوفة كرموز"
+
+msgid "Config Pages Types"
+msgstr "أنواع إعدادات الصفحات"
+
+msgid "Choose @name context"
+msgstr "اختيار اللغة"
+
+msgid "Please note that this Page is context sensitive, current context is %label"
+msgstr "يرجى ملاحظة أن هذه الصفحة حساسة للسياق، والسياق الحالي هو %label"
+
+msgid "Config page type"
+msgstr "أنواع إعدادات الصفحات"
+
+msgid "Add %type config page"
+msgstr "إضافة إعدادات الصفحات"
+
+msgid "Config pages settings"
+msgstr "إعدادات صفحات التكوين"
+
+msgid "Provide a label for this config page type to help identify it in the administration pages."
+msgstr "قم بتوفير تسمية لنوع صفحة التكوين هذه للمساعدة في التعرف عليها في صفحات الإدارة."
+
+msgid "Menu path which will be used for form display."
+msgstr "مسار القائمة الذي سيتم استخدامه لعرض النموذج."
+
+msgid "Weight of menu item."
+msgstr "وزن عنصر القائمة."
+
+msgid "Description will be displayed under link in Drupal BO."
+msgstr "سيتم عرض الوصف تحت الرابط في Drupal BO."
+
+msgid "Show context info message on ConfigPage edit form."
+msgstr "إظهار رسالة معلومات السياق في نموذج تحرير إعدادات الصفحات."
+
+msgid "Consider following context for this configuration"
+msgstr "خذ بعين الاعتبار السياق التالي لهذا التكوين"
+
+msgid "Fallback for contexts"
+msgstr "العودة إلى السياقات"
+
+msgid "Value that the context is going to have when no config page is found for the current context"
+msgstr "القيمة التي سيحصل عليها السياق عندما لا يتم العثور على صفحة تكوين للسياق الحالي"
+
+msgid "Expose this ConfigPage values as tokens."
+msgstr "عرض قيم إعدادات الصفحات هذه كرموز"
+
+msgid "<em>Edit config page</em> @label"
+msgstr "<em>تعديل صفحة التكوين</em> @label"
+
+msgid "Devel"
+msgstr "تطوير"
+
+msgid "Add config page"
+msgstr "إضافة إعدادات الصفحات"
+
+msgid "Manage Config pages"
+msgstr "إدارة إعدادات الصفحات"
+
+msgid "Add Config page"
+msgstr "إضافة إعدادات الصفحات"
+
+msgid "Beta version"
+msgstr "نسخة تجريبية"

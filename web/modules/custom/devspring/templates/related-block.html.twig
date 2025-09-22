@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default theme implementation for related block.
+ *
+ * Available variables:
+ * - items: Array of service nodes with title, url, id, and node object.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if items %}
+    {% for item in items %}
+   <div class="related-service-item mb-3">
+              <a href="{{ item.url }}" class="text-decoration-none">
+                <i class="fa fa-arrow-right text-primary me-2"></i>
+                {{ item.title }}
+              </a>
+            </div>
+    {% endfor %}
+{% endif %}

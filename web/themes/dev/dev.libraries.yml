@@ -15,7 +15,7 @@ global:
     assets/js/main.js: {}
   css:
     theme:
-      css/theme/print.css: { media: print }
+      # Removed the non-existent print.css file
       # Font Awesome Icons
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css: { type: external, minified: true }
       # Bootstrap Icons
@@ -26,3 +26,5 @@ global:
       css/custom.css: {}
       assets/css/bootstrap.min.css: {}
       assets/css/style.css: {}
+
+

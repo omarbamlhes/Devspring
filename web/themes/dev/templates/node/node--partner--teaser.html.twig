@@ -1,0 +1,12 @@
+     <div class="testimonial-item bg-transparent border rounded text-white p-4">
+                        <i class="fa fa-quote-left fa-2x mb-3"></i>
+                        <p>{{ content.body|render|striptags|trim|raw }}</p>
+                        <div class="d-flex align-items-center">
+                        {{ content.field_image }}
+                            {# <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ content.field_image }}"> #}
+                            {# <div class="ps-3">
+                                <h6 class="text-white mb-1">{{ label }}</h6>
+                                <small>{{ "Profession"|t }}</small>
+                            </div> #}
+                        </div>
+                    </div>

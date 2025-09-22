@@ -1,7 +1,7 @@
        <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-search me-2"></i>{{ "Dev"|t }}<span class="fs-5">{{ "spring"|t }}</span></h1>
+                    <h1 class="m-0"><i class="fa fa-search me-2"></i>{{ "Devspring"|t }}</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -15,7 +15,8 @@
                         {% endfor %}
                     </div>
                     <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">{{ "Pro Version"|t }}</a>
+                    {# <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">{{ "Pro Version"|t }}</a> #}
+                    {{ drupal_block('language_block:language_interface', wrapper=false) }}
                 </div>
             </nav>
 
@@ -25,8 +26,8 @@
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="text-white mb-4 animated zoomIn">{{ items.title | raw }}</h1>
                             <p class="text-white pb-3 animated zoomIn">{{ items.description | raw }}</p>
-                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Free Quote</a>
-                            <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <a href="/form/contact" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">{{ "Get a free consultation"|t }}</a>
+                            <a href="/form/contact" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">{{ "Contact Us"|t }}</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid" src="/{{ active_theme_path() }}/assets/img/hero.png" alt="">
@@ -67,16 +68,16 @@
                         <p class="mb-4">{{ items.description_about | raw }}</p>
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>{{ "Award Winning"|t }}</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>{{ "Professional Staff"|t }}</h6>
+                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>{{ "Innovative solutions"|t }}</h6>
+                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>{{ "High quality and performance"|t }}</h6>
                             </div>
                             <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>{{ "24/7 Support"|t }}</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>{{ "Fair Prices"|t }}</h6>
+                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>{{ "Specialized technical expertise"|t }}</h6>
+                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>{{ "Continuous support and effective cooperation"|t }}</h6>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">{{ "Read More"|t }}</a>
+                            <a class="btn btn-primary rounded-pill px-4 me-3" href="/form/contact">{{ "Read More"|t }}</a>
                             <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>

@@ -12,14 +12,37 @@ use Drupal\config_pages\Entity\ConfigPages;
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
 function dev_preprocess_html(array &$variables): void {
-
+  // Get current language
+  $current_language = \Drupal::languageManager()->getCurrentLanguage();
+  $langcode = $current_language->getId();
+  
+  // Set direction based on language
+  $rtl_languages = ['ar', 'he', 'fa', 'ur']; // Add more RTL languages as needed
+  $direction = in_array($langcode, $rtl_languages) ? 'rtl' : 'ltr';
+  
+  // Add direction to html attributes
+  $variables['html_attributes']['dir'] = $direction;
+  $variables['html_attributes']['lang'] = $langcode;
+  
+  // Add direction class to body
+  $variables['attributes']['class'][] = 'dir-' . $direction;
+  $variables['attributes']['class'][] = 'lang-' . $langcode;
 }
 
 /**
  * Implements hook_preprocess_HOOK() for page.html.twig.
  */
 function dev_preprocess_page(array &$variables): void {
-
+  // Get current language direction
+  $current_language = \Drupal::languageManager()->getCurrentLanguage();
+  $langcode = $current_language->getId();
+  $rtl_languages = ['ar', 'he', 'fa', 'ur'];
+  $is_rtl = in_array($langcode, $rtl_languages);
+  
+  // Make direction available in page template
+  $variables['is_rtl'] = $is_rtl;
+  $variables['direction'] = $is_rtl ? 'rtl' : 'ltr';
+  $variables['current_langcode'] = $langcode;
 }
 
 /**
@@ -35,6 +58,88 @@ function dev_preprocess_views_view(array &$variables): void {
     $config_page = ConfigPages::config('general_settings');
     if ($config_page) {
         $title = $config_page->get('field_title_service')->value;
+        $title_project = $config_page->get('field_title_projects')->value;
+        $title_statistic = $config_page->get('field_title_statistic')->value;
     }
-    $variables['title'] = $title;
+    // $variables['title'] = $title;
+    // $variables['title_project'] = $title_project;
+    $variables['title_statistic'] = $title_statistic;
+}
+
+
+function dev_preprocess_links__language_block(array &$variables): void {
+
+    $current_langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    if (isset($variables['links'][$current_langcode])) {
+      unset($variables['links'][$current_langcode]);
+    }
+    
+    foreach ($variables['links'] as $i => $link) {
+      /** @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage */
+      $linkLanguage = $link['link']['#options']['language'];
+      $lang_id = $linkLanguage->getId();
+      
+      // Set direction attribute for each language link
+      $rtl_languages = ['ar', 'he', 'fa', 'ur'];
+      $lang_direction = in_array($lang_id, $rtl_languages) ? 'rtl' : 'ltr';
+      
+      if ($lang_id == 'ar') {
+          $variables['links'][$i]['link']['#title'] = [
+              '#markup' => ('<span dir="rtl"> العربية </span>') ,
+          ];
+      }
+      if ($lang_id == 'en') {
+          $variables['links'][$i]['link']['#title'] = [
+              '#markup' => ('<span dir="ltr"> English </span>'),
+          ];
+      }
+  
+      $variables['links'][$i]['link']['#options']['attributes']['class'][] = 'btn btn-primary px-3 d-none d-lg-flex';
+      $variables['links'][$i]['link']['#options']['attributes']['dir'] = $lang_direction;
+    }
+  }
+  
+
+/**
+ * Helper function to check if current language is RTL.
+ */
+function dev_is_rtl(): bool {
+  $current_language = \Drupal::languageManager()->getCurrentLanguage();
+  $langcode = $current_language->getId();
+  $rtl_languages = ['ar', 'he', 'fa', 'ur']; // Add more RTL languages as needed
+  
+  return in_array($langcode, $rtl_languages);
+}
+
+/**
+ * Helper function to get current language direction.
+ */
+function dev_get_direction(): string {
+  return dev_is_rtl() ? 'rtl' : 'ltr';
+}
+
+/**
+ * Helper function to get opposite direction class for specific elements.
+ */
+function dev_get_opposite_direction_class(): string {
+  return dev_is_rtl() ? 'ltr' : 'rtl';
+}
+  
+
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function dev_preprocess_breadcrumb(&$variables)
+{
+    $route_name = \Drupal::routeMatch()->getRouteName();
+    $textColor = 'text-white'; // Default to white text
+    $black_routes = [
+        // Add routes here that should use black text
+        // 'some.other.route'
+    ];
+    if (in_array($route_name, $black_routes)) {
+        $textColor = 'text-black';
+    }
+    $variables['textColor'] = $textColor;
 }

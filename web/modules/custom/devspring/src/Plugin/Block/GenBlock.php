@@ -24,6 +24,8 @@ final class GenBlock extends BlockBase {
   public function build(): array {
     $title = '';
     $description = '';
+    $title_about = '';
+    $description_about = '';
     
     $config_page = ConfigPages::config('general_settings');
     if ($config_page) {

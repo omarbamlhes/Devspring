@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Dev theme's implementation to display a statistic node in teaser view mode.
+ * Perfect design with title, number, and icon.
+ */
+#}
+
+  <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                {# <i class="fa fa-home fa-2x"></i> #}
+                                {{ content.field_icon }}
+                            </div>
+                            <h5 class="mb-3">{{ label }}</h5>
+                            <h4>{{ content.field_number  }}</h4>
+                            <a class="btn px-3 mt-auto mx-auto" href="{{ url }}">{{ "Read More"|t }}</a>
+                        </div>
+                    </div>
